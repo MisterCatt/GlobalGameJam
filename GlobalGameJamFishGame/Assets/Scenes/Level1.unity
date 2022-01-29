@@ -2026,8 +2026,8 @@ MonoBehaviour:
   plussSpeed: 0
   minSpeed: 0
   maxSpeed: 5
-  contractingButton: 273
-  expandingButton: 274
+  contractingButton: 107
+  expandingButton: 108
   up: 119
   down: 115
   fish1: {fileID: 2104055810}
