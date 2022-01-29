@@ -45,17 +45,6 @@ public class LevelManager : MonoBehaviour
         {
             Dead();
         }
-
-        //if the red score is 3 higher than the blue, play the fish eating animation
-        if(redScore == blueScore+2)
-        {
-            EatFish();
-        }
-        //if the blue score is 3 higher than the red, play the fish eating aniimation
-        if(blueScore == redScore + 2)
-        {
-            EatFish();
-        }
         if(blueScore == 5 && redScore == 5)
         {
             Win();
@@ -100,12 +89,6 @@ public class LevelManager : MonoBehaviour
     {
         om.enabled = false;
         Debug.Log("DEADDEADDEAD");
-    }
-    //function that is called when 1 fish eats the other
-    void EatFish()
-    {
-        om.enabled = false;
-        Debug.Log("one fish ate the other!");
     }
     //function is called when you win
     void Win()
