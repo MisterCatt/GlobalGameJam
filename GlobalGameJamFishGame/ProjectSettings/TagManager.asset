@@ -7,6 +7,8 @@ TagManager:
   - Obstacle
   - BlueStar
   - RedStar
+  - RedFish
+  - BlueFish
   layers:
   - Default
   - TransparentFX
