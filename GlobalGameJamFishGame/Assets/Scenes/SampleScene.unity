@@ -1419,6 +1419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 1032742405}
+  sizeChange: 1.5
 --- !u!212 &1624551422
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2100,6 +2101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 1032742405}
+  sizeChange: 1.5
 --- !u!212 &2104055815
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -29,6 +29,7 @@ public class FishCollision : MonoBehaviour
         {
             Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
             lm.removeRedScore();
+            DownSize();
             
         }
         if (collision.gameObject.tag == "RedStar" && gameObject.tag == "RedFish")
@@ -43,9 +44,10 @@ public class FishCollision : MonoBehaviour
             Debug.Log("blue orb red fish collision");
         }
         //BLUEFISH COLLISION
-        if (collision.gameObject.tag == "Objstacle" && gameObject.tag == "BlueFish")
+        if (collision.gameObject.tag == "Obstacle" && gameObject.tag == "BlueFish")
         {
             lm.removeBlueScore();
+            DownSize();
         }
         if(collision.gameObject.tag == "BlueStar" && gameObject.tag == "BlueFish")
         {
@@ -62,5 +64,9 @@ public class FishCollision : MonoBehaviour
     private void UpSize()
     {
         gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x*sizeChange, gameObject.transform.localScale.y*sizeChange,0);
+    }
+    private void DownSize()
+    {
+        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x / sizeChange, gameObject.transform.localScale.y / sizeChange, 0);
     }
 }
