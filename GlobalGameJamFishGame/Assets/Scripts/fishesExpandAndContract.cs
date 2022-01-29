@@ -11,7 +11,7 @@ public class fishesExpandAndContract : MonoBehaviour
     KeyCode contractingButton, expandingButton, up, down;
 
     [SerializeField]
-    public GameObject fish1, fish2;
+    GameObject fish1, fish2;
 
     Vector3 temporaryRotation;
     
@@ -52,9 +52,11 @@ public class fishesExpandAndContract : MonoBehaviour
 
         if (Input.GetKey(up))
         {
+            if(transform.position.y <= 20)
             transform.position = new Vector3(0,transform.position.y+upDownSpeed,0);
         }else if (Input.GetKey(down))
         {
+            if(transform.position.y >= -20)
             transform.position = new Vector3(0, transform.position.y- upDownSpeed,0);
         }
         temporaryRotation.z -= rotationSpeed;
