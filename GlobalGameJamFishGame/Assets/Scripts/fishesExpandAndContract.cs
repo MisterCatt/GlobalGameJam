@@ -52,11 +52,11 @@ public class fishesExpandAndContract : MonoBehaviour
 
         if (Input.GetKey(up))
         {
-            if(transform.position.y <= 20)
+            if(transform.position.y <= 10)
             transform.position = new Vector3(0,transform.position.y+upDownSpeed,0);
         }else if (Input.GetKey(down))
         {
-            if(transform.position.y >= -20)
+            if(transform.position.y >= -10)
             transform.position = new Vector3(0, transform.position.y- upDownSpeed,0);
         }
         temporaryRotation.z -= rotationSpeed;
