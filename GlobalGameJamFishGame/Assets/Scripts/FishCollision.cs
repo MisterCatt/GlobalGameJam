@@ -79,7 +79,7 @@ public class FishCollision : MonoBehaviour
         if(collision.gameObject.tag == "RedStar" &&  gameObject.tag == "BlueFish")
         {
             Debug.Log("red orb blue fish collision");
-            soundEffects[1].Play(); //plays the bad star collision sfx
+            soundEffects[2].Play(); //plays the bad star collision sfx
         }
     }
     //Code that makes the fish larger (is called in the the blue on blue or red on red collision check)
