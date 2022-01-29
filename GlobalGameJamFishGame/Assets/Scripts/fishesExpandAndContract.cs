@@ -26,7 +26,7 @@ public class fishesExpandAndContract : MonoBehaviour
     void Update()
     {
         
-        if(temporaryRadius > minRadius)
+        if(temporaryRadius >= minRadius)
         {
             if (Input.GetKey(contractingButton))
             {
@@ -37,7 +37,7 @@ public class fishesExpandAndContract : MonoBehaviour
             }
         }
 
-        if(temporaryRadius < maxRadius)
+        if(temporaryRadius <= maxRadius)
         {
             if (Input.GetKey(expandingButton))
             {
