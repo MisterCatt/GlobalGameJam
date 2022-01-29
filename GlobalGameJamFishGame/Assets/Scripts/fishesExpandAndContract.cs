@@ -5,7 +5,7 @@ using UnityEngine;
 public class fishesExpandAndContract : MonoBehaviour
 {
     [SerializeField]
-    float maxRadius, minRadius, radiusChangeSpeed, upDownSpeed,rotationSpeed,temporaryRadius;
+    float maxRadius, minRadius, radiusChangeSpeed, upDownSpeed,rotationSpeed,temporaryRadius,plussSpeed,minSpeed,maxSpeed;
 
     [SerializeField]
     KeyCode contractingButton, expandingButton, up, down;
@@ -21,10 +21,11 @@ public class fishesExpandAndContract : MonoBehaviour
         
         temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y ,2));
         temporaryRotation = transform.rotation.eulerAngles;
+        minSpeed = rotationSpeed;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         if(temporaryRadius >= minRadius)
@@ -35,6 +36,8 @@ public class fishesExpandAndContract : MonoBehaviour
                 fish2.transform.position = Vector2.MoveTowards(fish2.transform.position, transform.position, radiusChangeSpeed);
                 temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y, 2));
 
+                if (rotationSpeed > minSpeed)
+                    rotationSpeed--;
             }
         }
 
@@ -46,6 +49,8 @@ public class fishesExpandAndContract : MonoBehaviour
                 fish2.transform.position = Vector2.MoveTowards(fish2.transform.position, transform.position, -radiusChangeSpeed);
                 temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y, 2));
 
+                if (rotationSpeed < maxSpeed)
+                    rotationSpeed++;
 
             }
         }
