@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class LevelManager : MonoBehaviour
         if(redScore < 0 || blueScore < 0)
         {
             Dead();
+
         }
 
         //if the red score is 3 higher than the blue, play the fish eating animation
@@ -100,6 +102,8 @@ public class LevelManager : MonoBehaviour
     {
         om.enabled = false;
         Debug.Log("DEADDEADDEAD");
+        SceneManager.LoadScene("StartScreen");
+
     }
     //function that is called when 1 fish eats the other
     void EatFish()
