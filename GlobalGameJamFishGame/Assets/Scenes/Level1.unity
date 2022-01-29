@@ -1883,15 +1883,22 @@ MonoBehaviour:
   minRadius: 2.5
   radiusChangeSpeed: 0.25
   upDownSpeed: 0.5
+  leftRightSpeed: 0.5
   rotationSpeed: 0.5
   temporaryRadius: 2.5
   plussSpeed: 0
   minSpeed: 0
   maxSpeed: 5
+  minYPosition: -10
+  maxYPosition: 10
+  minXPosition: -10
+  maxXPosition: 10
   contractingButton: 107
   expandingButton: 108
   up: 119
   down: 115
+  left: 97
+  right: 100
   fish1: {fileID: 2104055810}
   fish2: {fileID: 1624551417}
 --- !u!4 &911984158
