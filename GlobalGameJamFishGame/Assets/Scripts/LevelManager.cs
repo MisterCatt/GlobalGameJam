@@ -9,6 +9,10 @@ public class LevelManager : MonoBehaviour
     GameObject orange;
     private AmmountCheck ac1, ac2;
     private int blueScore, redScore;
+
+    [SerializeField]
+    GameObject obstacles;
+    obstacleMovement om;
     void Start()
     {
         //CODE BELOW IS TEMPORARLY OUT COMMENTED WIP
@@ -18,6 +22,9 @@ public class LevelManager : MonoBehaviour
         //ac2 = orange.GetComponent<AmmountCheck>();
         //blueScore = ac1.AmmountCollected;
         //redScore = ac2.AmmountCollected;
+
+        //takes the obstacleMovement script from obstacles
+        om = obstacles.GetComponent<obstacleMovement>();
 
         //The 2 different scores we use to see how many points the different fishes have gathered
         blueScore = 0;
@@ -91,16 +98,19 @@ public class LevelManager : MonoBehaviour
     //function that is called when you die
     void Dead()
     {
+        om.enabled = false;
         Debug.Log("DEADDEADDEAD");
     }
     //function that is called when 1 fish eats the other
     void EatFish()
     {
+        om.enabled = false;
         Debug.Log("one fish ate the other!");
     }
     //function is called when you win
     void Win()
     {
+        om.enabled = false;
         Debug.Log("Fish fusion activate!");
     }
    
