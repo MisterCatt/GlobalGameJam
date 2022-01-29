@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FishCollision : MonoBehaviour
 {
-    public GameObject levelManager;
+    [SerializeField]
+    GameObject levelManager;
     LevelManager lm;
 
     // Start is called before the first frame update
@@ -21,31 +22,34 @@ public class FishCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle")
+        //REDFISH COLLISION
+        if (collision.gameObject.tag == "Obstacle" && gameObject.tag == "RedFish")
         {
             Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
+            lm.removeRedScore();
         }
-        if(collision.gameObject.tag == "RedStar" && gameObject.tag == "RedFish")
+        if (collision.gameObject.tag == "RedStar" && gameObject.tag == "RedFish")
         {
             collision.gameObject.SetActive(false);
             lm.addRedScore();
+        }
+        if (collision.gameObject.tag == "BlueStar" && gameObject.tag == "RedFish")
+        {
+            Debug.Log("blue orb red fish collision");
+        }
+        //BLUEFISH COLLISION
+        if (collision.gameObject.tag == "Objstacle" && gameObject.tag == "BlueFish")
+        {
+            lm.removeBlueScore();
         }
         if(collision.gameObject.tag == "BlueStar" && gameObject.tag == "BlueFish")
         {
             collision.gameObject.SetActive(false);
             lm.addBlueScore();
         }
-        if(collision.gameObject.tag == "BlueStar" && gameObject.tag == "RedFish")
-        {
-            Debug.Log("blue orb red fish collision");
-        }
         if(collision.gameObject.tag == "RedStar" &&  gameObject.tag == "BlueFish")
         {
             Debug.Log("red orb blue fish collision");
-        }
-        else
-        {
-            Debug.Log("collided with: " + collision.gameObject.name);
         }
     }
 }

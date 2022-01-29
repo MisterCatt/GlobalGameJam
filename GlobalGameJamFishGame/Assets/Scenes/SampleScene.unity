@@ -661,14 +661,14 @@ MonoBehaviour:
   minRadius: 2.5
   radiusChangeSpeed: 0.3
   upDownSpeed: 0.5
-  fish1: {fileID: 2104055810}
-  fish2: {fileID: 1624551417}
+  rotationSpeed: 0.5
+  temporaryRadius: 2.5
   contractingButton: 276
   expandingButton: 275
   up: 119
   down: 115
-  rotationSpeed: 0.5
-  temporaryRadius: 2.5
+  fish1: {fileID: 2104055810}
+  fish2: {fileID: 1624551417}
 --- !u!4 &911984158
 Transform:
   m_ObjectHideFlags: 0
@@ -899,6 +899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1032742407}
   - component: {fileID: 1032742406}
+  - component: {fileID: 1032742408}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -938,6 +939,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1032742408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032742405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76b063cdfaa5ae64ab98d448cddcee34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1137392584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,9 +1070,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1309094869}
   - component: {fileID: 1309094870}
+  - component: {fileID: 1309094871}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: BlueStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1119,7 +1133,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: 86d27f1911438db48a3c5d12003d8569, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.9607844, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1129,6 +1143,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1309094871
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309094868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1350479045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1339,7 @@ GameObject:
   - component: {fileID: 1624551419}
   m_Layer: 0
   m_Name: blue_fish
-  m_TagString: Untagged
+  m_TagString: BlueFish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1388,6 +1418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837de4c52b4046740be7a7ff450028e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelManager: {fileID: 1032742405}
 --- !u!212 &1624551422
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1667,9 +1698,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1941222249}
   - component: {fileID: 1941222250}
+  - component: {fileID: 1941222251}
   m_Layer: 0
   m_Name: Circle (1)
-  m_TagString: Untagged
+  m_TagString: RedStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1682,7 +1714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941222248}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 7.9, z: 0.7276154}
+  m_LocalPosition: {x: -0.04, y: 7.07, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1350479047}
@@ -1729,7 +1761,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: 86d27f1911438db48a3c5d12003d8569, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.91372555, g: 0.44705886, b: 0.08235294, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1739,6 +1771,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1941222251
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941222248}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &2090876144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,7 +2020,7 @@ GameObject:
   - component: {fileID: 2104055812}
   m_Layer: 0
   m_Name: red_fish
-  m_TagString: Untagged
+  m_TagString: RedFish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2051,6 +2099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837de4c52b4046740be7a7ff450028e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelManager: {fileID: 1032742405}
 --- !u!212 &2104055815
 SpriteRenderer:
   m_ObjectHideFlags: 0

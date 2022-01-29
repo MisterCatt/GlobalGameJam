@@ -28,7 +28,14 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-       
+
+    }
+    private void FixedUpdate()
+    {
+        if(redScore < 0 || blueScore < 0)
+        {
+            Dead();
+        }
     }
 
     public void addRedScore()
@@ -41,6 +48,16 @@ public class LevelManager : MonoBehaviour
         blueScore++;
         Debug.Log("Blue score" + blueScore);
     }
+    public void removeRedScore()
+    {
+        redScore--;
+        Debug.Log("Red score: " + redScore);
+    }
+    public void removeBlueScore()
+    {
+        blueScore--;
+        Debug.Log("Blue score" + blueScore);
+    }
 
     public int getRedScore()
     {
@@ -49,6 +66,11 @@ public class LevelManager : MonoBehaviour
     public int getBlueScore()
     {
         return blueScore;
+    }
+
+    void Dead()
+    {
+        Debug.Log("DEADDEADDEAD");
     }
    
 }
