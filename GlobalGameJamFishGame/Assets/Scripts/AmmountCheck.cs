@@ -9,14 +9,17 @@ public class AmmountCheck : MonoBehaviour
     GameObject obj;
     Animator animator;
     SpriteRenderer renderer;
-
-    
+    Transform transform;
+    int lastAmmount=0;
     void Start()
     {
         renderer = gameObject.GetComponent<SpriteRenderer>();
+        transform = gameObject.GetComponent<Transform>();
+       
     }
     void Update()
     {
+        
         if (AmmountCollected > 0 && AmmountCollected <= 2)
         {
             renderer.sprite = newSprite1;
@@ -28,16 +31,21 @@ public class AmmountCheck : MonoBehaviour
         }
         else if (AmmountCollected > 4 && AmmountCollected <= 6)
         {
+           
             renderer.sprite = newSprite3;
+           
         }
         else if (AmmountCollected > 6 && AmmountCollected <= 8)
         {
+            
             renderer.sprite = newSprite4;
         }
         else if (AmmountCollected > 8 && AmmountCollected <= 10)
         {
+           
             renderer.sprite = newSprite5;
         }
+         lastAmmount = AmmountCollected;
     }
     
  
