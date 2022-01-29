@@ -9,6 +9,9 @@ TagManager:
   - RedStar
   - RedFish
   - BlueFish
+  - BlueCup
+  - OrangeCup
+  - LevelManager
   layers:
   - Default
   - TransparentFX
