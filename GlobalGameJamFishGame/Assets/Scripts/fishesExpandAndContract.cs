@@ -73,20 +73,20 @@ public class fishesExpandAndContract : MonoBehaviour
         temporaryRotation.z -= rotationSpeed;
         transform.rotation = Quaternion.Euler(temporaryRotation);
 
-        //if (Input.GetKey(left))
-        //{
-        //    if(transform.position.x > minXPosition)
-        //    {
-        //        transform.position = new Vector3(transform.position.x - leftRightSpeed, transform.position.y, 0);
-        //    }
-        //}
-        //else if (Input.GetKey(right))
-        //{
-        //    if(transform.position.x < maxXPosition)
-        //    {
-        //        transform.position = new Vector3(transform.position.x + leftRightSpeed, transform.position.y , 0);
-        //    }
-        //}
+        if (Input.GetKey(left))
+        {
+            if(transform.position.x > minXPosition)
+            {
+                transform.position = new Vector3(transform.position.x - leftRightSpeed, transform.position.y, 0);
+            }
+        }
+        else if (Input.GetKey(right))
+        {
+            if(transform.position.x < maxXPosition)
+            {
+                transform.position = new Vector3(transform.position.x + leftRightSpeed, transform.position.y , 0);
+            }
+        }
         
     }
 }
