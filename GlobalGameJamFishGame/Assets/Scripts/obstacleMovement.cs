@@ -21,10 +21,10 @@ public class obstacleMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(obstacles.Length);
+       //Debug.Log(obstacles.Length);
         foreach (GameObject o in obstacles)
         {
-            Debug.Log(o.name);
+            //Debug.Log(o.name);
             o.transform.Translate(-Vector3.right * speed * Time.deltaTime);
         }
     }

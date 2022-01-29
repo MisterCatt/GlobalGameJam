@@ -23,5 +23,13 @@ public class FishCollision : MonoBehaviour
         {
             Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
         }
+        if(collision.gameObject.tag == "RedStar" && gameObject.tag == "RedFish")
+        {
+            collision.gameObject.SetActive(false);
+        }
+        if(collision.gameObject.tag == "BlueStar" && gameObject.tag == "BlueFish")
+        {
+            collision.gameObject.SetActive(false);
+        }
     }
 }
