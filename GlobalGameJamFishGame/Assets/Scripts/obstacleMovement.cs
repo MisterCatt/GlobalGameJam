@@ -26,6 +26,10 @@ public class obstacleMovement : MonoBehaviour
         foreach (GameObject o in obstacles)
         {
             o.transform.Translate(-Vector3.right * speed * Time.deltaTime);
+            if(o.transform.position.x < Camera.main.ScreenToWorldPoint(Vector3.zero).x)
+            {
+                o.transform.position = new Vector3(100,o.transform.position.y,o.transform.position.z);
+            }
         }
     }
 }
