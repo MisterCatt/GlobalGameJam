@@ -49,6 +49,10 @@ public class LevelManager : MonoBehaviour
         {
             EatFish();
         }
+        if(blueScore == 5 && redScore == 5)
+        {
+            Win();
+        }
     }
     //adds a point to the red score
     public void addRedScore()
@@ -93,6 +97,11 @@ public class LevelManager : MonoBehaviour
     void EatFish()
     {
         Debug.Log("one fish ate the other!");
+    }
+    //function is called when you win
+    void Win()
+    {
+        Debug.Log("Fish fusion activate!");
     }
    
 }
