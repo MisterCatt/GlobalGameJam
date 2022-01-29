@@ -29,6 +29,10 @@ public class obstacleMovement : MonoBehaviour
             if(o.transform.position.x < Camera.main.ScreenToWorldPoint(Vector3.zero).x)
             {
                 o.transform.position = new Vector3(100,o.transform.position.y,o.transform.position.z);
+                if (!o.activeSelf)
+                {
+                    o.SetActive(true);
+                }
             }
         }
     }
