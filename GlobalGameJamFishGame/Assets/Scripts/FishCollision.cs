@@ -31,5 +31,17 @@ public class FishCollision : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
         }
+        if(collision.gameObject.tag == "BlueStar" && gameObject.tag == "RedFish")
+        {
+            Debug.Log("blue orb red fish collision");
+        }
+        if(collision.gameObject.tag == "RedStar" &&  gameObject.tag == "BlueFish")
+        {
+            Debug.Log("red orb blue fish collision");
+        }
+        else
+        {
+            Debug.Log("collided with: " + collision.gameObject.name);
+        }
     }
 }

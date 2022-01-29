@@ -24,7 +24,7 @@ public class fishesExpandAndContract : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        upDownSpeed = 0.05f;
+        
         temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y ,2));
         temporaryRotation = transform.rotation.eulerAngles;
     }
