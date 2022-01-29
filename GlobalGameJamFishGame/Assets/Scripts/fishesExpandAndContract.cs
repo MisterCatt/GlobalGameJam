@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class fishesExpandAndContract : MonoBehaviour
 {
-    public float maxRadius;
-    public float minRadius;
-    public float radiusChangeSpeed;
-    public float upDownSpeed;
+    [SerializeField]
+    float maxRadius, minRadius, radiusChangeSpeed, upDownSpeed,rotationSpeed,temporaryRadius;
 
-    public GameObject fish1;
-    public GameObject fish2;
+    [SerializeField]
+    KeyCode contractingButton, expandingButton, up, down;
 
-    public KeyCode contractingButton;
-    public KeyCode expandingButton;
-    public KeyCode up;
-    public KeyCode down;
+    [SerializeField]
+    public GameObject fish1, fish2;
 
-    public float rotationSpeed;
-    public float temporaryRadius;
     Vector3 temporaryRotation;
     
     // Start is called before the first frame update

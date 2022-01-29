@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class obstacleMovement : MonoBehaviour
 {
+    
     GameObject[] obstacles;
-    public float speed;
+    [SerializeField]
+    float speed;
     // Start is called before the first frame update
     void Start()
     {
