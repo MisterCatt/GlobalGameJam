@@ -7,10 +7,10 @@ public class fishesExpandAndContract : MonoBehaviour
     //IF YOU NEED ANY OF THESE VARIABLES, MAKE A GETTER OR A SETTER AND DONT JUST RANDOMLY MAKE A PUBLIC VARIABLE. You will make jerry sad :(
 
     [SerializeField]
-    float maxRadius, minRadius, radiusChangeSpeed, upDownSpeed,rotationSpeed,temporaryRadius,plussSpeed,minSpeed,maxSpeed;
+    float maxRadius, minRadius, radiusChangeSpeed, upDownSpeed, leftRightSpeed, rotationSpeed, temporaryRadius, plussSpeed, minSpeed, maxSpeed, minYPosition, maxYPosition, minXPosition, maxXPosition;
 
     [SerializeField]
-    KeyCode contractingButton, expandingButton, up, down;
+    KeyCode contractingButton, expandingButton, up, down, left, right;
 
     [SerializeField]
     GameObject fish1, fish2;
@@ -30,7 +30,7 @@ public class fishesExpandAndContract : MonoBehaviour
     void FixedUpdate()
     {
         
-        if(temporaryRadius >= minRadius)
+        if(temporaryRadius > minRadius)
         {
             if (Input.GetKey(contractingButton))
             {
@@ -44,7 +44,7 @@ public class fishesExpandAndContract : MonoBehaviour
             }
         }
 
-        if(temporaryRadius <= maxRadius)
+        if(temporaryRadius < maxRadius)
         {
             if (Input.GetKey(expandingButton))
             {
@@ -62,15 +62,31 @@ public class fishesExpandAndContract : MonoBehaviour
         //Moves the anchors y position up and down
         if (Input.GetKey(up))
         {
-            if(transform.position.y <= 10)
-            transform.position = new Vector3(0,transform.position.y+upDownSpeed,0);
+            if(transform.position.y < maxYPosition)
+            transform.position = new Vector3(transform.position.x,transform.position.y+upDownSpeed,0);
         }else if (Input.GetKey(down))
         {
-            if(transform.position.y >= -10)
-            transform.position = new Vector3(0, transform.position.y- upDownSpeed,0);
+            if(transform.position.y > minYPosition)
+            transform.position = new Vector3(transform.position.x, transform.position.y- upDownSpeed,0);
         }
+
         temporaryRotation.z -= rotationSpeed;
         transform.rotation = Quaternion.Euler(temporaryRotation);
+
+        if (Input.GetKey(left))
+        {
+            if(transform.position.x > minXPosition)
+            {
+                transform.position = new Vector3(transform.position.x - leftRightSpeed, transform.position.y, 0);
+            }
+        }
+        else if (Input.GetKey(right))
+        {
+            if(transform.position.x < maxXPosition)
+            {
+                transform.position = new Vector3(transform.position.x + leftRightSpeed, transform.position.y , 0);
+            }
+        }
         
     }
 }
