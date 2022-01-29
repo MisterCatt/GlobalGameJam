@@ -12,7 +12,7 @@ public class obstacleMovement : MonoBehaviour
     void Start()
     {
         obstacles = new GameObject[transform.childCount];
-
+        //takes all the objects under the obstacle tag in the hierarchy and adds them to the array
      for(int i = 0; i < transform.childCount; i++)
         {
             obstacles[i] = transform.GetChild(i).gameObject;
@@ -22,10 +22,9 @@ public class obstacleMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       //Debug.Log(obstacles.Length);
+        //takes everything from the array and moves it to the left
         foreach (GameObject o in obstacles)
         {
-            //Debug.Log(o.name);
             o.transform.Translate(-Vector3.right * speed * Time.deltaTime);
         }
     }
