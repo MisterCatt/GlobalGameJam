@@ -26,10 +26,10 @@ public class Balance : MonoBehaviour
         image = obj.GetComponent<Image>();
        pos1 = Blue.transform.position;
        pos2 = Orange.transform.position;
-       pos1low= pos1 + new Vector3(0, -17, 0);
-        pos1high= pos1 + new Vector3(0, 17, 0);
-        pos2low = pos2 + new Vector3(0, -17, 0);
-        pos2high = pos2 + new Vector3(0, 17, 0);
+       pos1low= pos1 + new Vector3(0, -37, 0);
+        pos1high= pos1 + new Vector3(0, 35, 0);
+        pos2low = pos2 + new Vector3(0, -37, 0);
+        pos2high = pos2 + new Vector3(0, 35, 0);
     }
 
     
