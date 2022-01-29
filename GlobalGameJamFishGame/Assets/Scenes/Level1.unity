@@ -288,9 +288,10 @@ GameObject:
   - component: {fileID: 187031241}
   - component: {fileID: 187031243}
   - component: {fileID: 187031242}
+  - component: {fileID: 187031244}
   m_Layer: 0
   m_Name: RealOrangeStar 2 (1)
-  m_TagString: Untagged
+  m_TagString: RedStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,6 +380,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &187031244
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187031240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.07591923}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &268034193
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,9 +502,10 @@ GameObject:
   - component: {fileID: 272503226}
   - component: {fileID: 272503228}
   - component: {fileID: 272503227}
+  - component: {fileID: 272503229}
   m_Layer: 0
   m_Name: RealOrangeStar 2 (2)
-  m_TagString: Untagged
+  m_TagString: RedStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -576,6 +594,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &272503229
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272503225}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.044497382}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &468440766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1034,7 @@ GameObject:
   - component: {fileID: 555578956}
   m_Layer: 5
   m_Name: UI
-  m_TagString: Untagged
+  m_TagString: BlueStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1490,9 +1524,10 @@ GameObject:
   - component: {fileID: 825941472}
   - component: {fileID: 825941474}
   - component: {fileID: 825941473}
+  - component: {fileID: 825941475}
   m_Layer: 0
   m_Name: RealBlueStar1 (3)
-  m_TagString: Untagged
+  m_TagString: BlueStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1581,6 +1616,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &825941475
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825941471}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.000000067055225}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &864722942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,9 +1921,10 @@ GameObject:
   - component: {fileID: 912113804}
   - component: {fileID: 912113806}
   - component: {fileID: 912113805}
+  - component: {fileID: 912113807}
   m_Layer: 0
   m_Name: RealBlueStar1 (2)
-  m_TagString: Untagged
+  m_TagString: BlueStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1961,6 +2013,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &912113807
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912113803}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.004536802, y: -0.00000014912347}
+  serializedVersion: 2
+  m_Radius: 0.58758485
 --- !u!1 &922430780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,6 +2295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b063cdfaa5ae64ab98d448cddcee34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstacles: {fileID: 0}
 --- !u!1 &1060849843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,9 +2525,10 @@ GameObject:
   - component: {fileID: 1149099254}
   - component: {fileID: 1149099253}
   - component: {fileID: 1149099252}
+  - component: {fileID: 1149099255}
   m_Layer: 0
   m_Name: RealBlueStar1
-  m_TagString: Untagged
+  m_TagString: BlueStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2541,12 +2611,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149099251}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.653921, y: 1.1979725, z: 0.7276154}
-  m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
+  m_LocalPosition: {x: 19.5352, y: 1.1505, z: 0.7276154}
+  m_LocalScale: {x: 1.9260389, y: 1.639889, z: 1}
   m_Children: []
   m_Father: {fileID: 1350479047}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1149099255
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149099251}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.019734062, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.68620837
 --- !u!1 &1150673994
 GameObject:
   m_ObjectHideFlags: 0
@@ -2751,9 +2837,10 @@ GameObject:
   - component: {fileID: 1377852235}
   - component: {fileID: 1377852237}
   - component: {fileID: 1377852236}
+  - component: {fileID: 1377852238}
   m_Layer: 0
   m_Name: RealBlueStar1 (4)
-  m_TagString: Untagged
+  m_TagString: BlueStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2842,6 +2929,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1377852238
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377852234}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000038146973, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &1395705517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2962,9 +3065,10 @@ GameObject:
   - component: {fileID: 1472641846}
   - component: {fileID: 1472641845}
   - component: {fileID: 1472641844}
+  - component: {fileID: 1472641847}
   m_Layer: 0
   m_Name: RealOrangeStar 2
-  m_TagString: Untagged
+  m_TagString: RedStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3053,6 +3157,22 @@ Transform:
   m_Father: {fileID: 1350479047}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1472641847
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472641843}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0105320895, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &1486446720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,9 +3184,10 @@ GameObject:
   - component: {fileID: 1486446721}
   - component: {fileID: 1486446723}
   - component: {fileID: 1486446722}
+  - component: {fileID: 1486446724}
   m_Layer: 0
   m_Name: RealOrangeStar 2 (4)
-  m_TagString: Untagged
+  m_TagString: RedStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3155,6 +3276,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1486446724
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486446720}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00000009685755}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &1516265153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3166,9 +3303,10 @@ GameObject:
   - component: {fileID: 1516265154}
   - component: {fileID: 1516265156}
   - component: {fileID: 1516265155}
+  - component: {fileID: 1516265157}
   m_Layer: 0
   m_Name: RealOrangeStar 2 (6)
-  m_TagString: Untagged
+  m_TagString: RedStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3257,6 +3395,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1516265157
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516265153}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00000023841858}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &1546649719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,9 +3787,10 @@ GameObject:
   - component: {fileID: 1693588875}
   - component: {fileID: 1693588877}
   - component: {fileID: 1693588876}
+  - component: {fileID: 1693588878}
   m_Layer: 0
   m_Name: RealOrangeStar 2 (5)
-  m_TagString: Untagged
+  m_TagString: RedStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3724,6 +3879,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1693588878
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693588874}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000038146973, y: 0.00000023841858}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &1718037910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,9 +4451,10 @@ GameObject:
   - component: {fileID: 1879631077}
   - component: {fileID: 1879631079}
   - component: {fileID: 1879631078}
+  - component: {fileID: 1879631080}
   m_Layer: 0
   m_Name: RealBlueStar1 (1)
-  m_TagString: Untagged
+  m_TagString: BlueStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4371,6 +4543,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1879631080
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879631076}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.011100452}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &1892262660
 GameObject:
   m_ObjectHideFlags: 0
@@ -4463,9 +4651,10 @@ GameObject:
   - component: {fileID: 1954179629}
   - component: {fileID: 1954179631}
   - component: {fileID: 1954179630}
+  - component: {fileID: 1954179632}
   m_Layer: 0
   m_Name: RealOrangeStar 2 (3)
-  m_TagString: Untagged
+  m_TagString: RedStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4554,6 +4743,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1954179632
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954179628}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000019073486, y: -0.00000023841858}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &1954971375
 GameObject:
   m_ObjectHideFlags: 0
@@ -4783,9 +4988,10 @@ GameObject:
   - component: {fileID: 2084843219}
   - component: {fileID: 2084843221}
   - component: {fileID: 2084843220}
+  - component: {fileID: 2084843222}
   m_Layer: 0
   m_Name: RealBlueStar1 (5)
-  m_TagString: Untagged
+  m_TagString: BlueStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4874,6 +5080,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &2084843222
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084843218}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.00000008940697}
+  serializedVersion: 2
+  m_Radius: 0.5875849
 --- !u!1 &2088438076
 GameObject:
   m_ObjectHideFlags: 0
