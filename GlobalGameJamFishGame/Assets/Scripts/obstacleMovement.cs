@@ -3,21 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class obstacleMovement : MonoBehaviour
-{   
+{
+    GameObject[] obstacles;
     public float speed;
-    GameObject obstacle;
-    Vector2 tempPos;
     // Start is called before the first frame update
     void Start()
     {
-        obstacle = this.gameObject;
-        tempPos = obstacle.transform.position;
+        speed = 2.0f;
+        obstacles = new GameObject[transform.childCount];
+
+     for(int i = 0; i < transform.childCount; i++)
+        {
+            obstacles[i] = transform.GetChild(i).gameObject;
+        }   
     }
 
     // Update is called once per frame
     void Update()
     {
-        tempPos.x -= speed;
-        obstacle.transform.position = tempPos;
+        Debug.Log(obstacles.Length);
+        foreach (GameObject o in obstacles)
+        {
+            Debug.Log(o.name);
+            o.transform.Translate(-Vector3.right * speed * Time.deltaTime);
+        }
     }
 }
