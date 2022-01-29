@@ -9,7 +9,7 @@ public class Trasnsitiontoplayscene : MonoBehaviour
     {
        if (Input.GetKeyDown (KeyCode.Mouse0))
         {
-            SceneManager.LoadScene("PlayScreen");
+            SceneManager.LoadScene("Level1");
        }
     }
 }
