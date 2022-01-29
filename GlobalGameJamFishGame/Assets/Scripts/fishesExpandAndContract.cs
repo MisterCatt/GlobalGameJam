@@ -16,6 +16,13 @@ public class fishesExpandAndContract : MonoBehaviour
     GameObject fish1, fish2;
 
     Vector3 temporaryRotation;
+
+    public AudioSource expandSFX;
+    public AudioSource shrinkSFX;
+
+    bool soundIsPlaying = false;
+    float currentTime;
+    int counter;
     
     // Start is called before the first frame update
     void Start()
@@ -24,12 +31,17 @@ public class fishesExpandAndContract : MonoBehaviour
         temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y ,2));
         temporaryRotation = transform.rotation.eulerAngles;
         minSpeed = rotationSpeed;
+        counter = 0;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        if(counter > 30)
+        {
+            soundIsPlaying = false;
+        }
+
         if(temporaryRadius > minRadius)
         {
             if (Input.GetKey(contractingButton))
@@ -37,7 +49,14 @@ public class fishesExpandAndContract : MonoBehaviour
                 fish1.transform.position = Vector2.MoveTowards(fish1.transform.position, transform.position, radiusChangeSpeed);
                 fish2.transform.position = Vector2.MoveTowards(fish2.transform.position, transform.position, radiusChangeSpeed);
                 temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y, 2));
-                
+
+                if (!soundIsPlaying)
+                {
+                    counter = 0;
+                    soundIsPlaying = true;
+                    shrinkSFX.Play();
+                }
+
                 //lessens the speed when you become smaller
                 if (rotationSpeed > minSpeed)
                     rotationSpeed-=plussSpeed;
@@ -51,6 +70,13 @@ public class fishesExpandAndContract : MonoBehaviour
                 fish1.transform.position = Vector2.MoveTowards(fish1.transform.position, transform.position, -radiusChangeSpeed);
                 fish2.transform.position = Vector2.MoveTowards(fish2.transform.position, transform.position, -radiusChangeSpeed);
                 temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y, 2));
+
+                if (!soundIsPlaying)
+                {
+                    counter = 0;
+                    soundIsPlaying = true;
+                    expandSFX.Play();
+                }
 
                 //upps the speed when you become larger
                 if (rotationSpeed < maxSpeed)
@@ -87,6 +113,6 @@ public class fishesExpandAndContract : MonoBehaviour
                 transform.position = new Vector3(transform.position.x + leftRightSpeed, transform.position.y , 0);
             }
         }
-        
+        counter++;
     }
 }
