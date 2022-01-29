@@ -10,6 +10,8 @@ public class FishCollision : MonoBehaviour
     [SerializeField]
     float sizeChange;
     public List<AudioSource> soundEffects = new List<AudioSource>();
+    public List<AudioSource> listOfStarNotes = new List<AudioSource>();
+    static int noteIndex = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,10 @@ public class FishCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(noteIndex > 7)
+        {
+            noteIndex = 0;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,7 +48,8 @@ public class FishCollision : MonoBehaviour
             UpSize();
             //PLAY A FANCY ROCK SMASH ANIMATION AND MAKE A FANCY ROCK SMASH SOUND
             collision.gameObject.SetActive(false);
-            soundEffects[1].Play(); //plays the good star collision sfx
+            listOfStarNotes[noteIndex].Play(); //plays the good star collision sfx
+            noteIndex++;
         }
         //Is called when the blue star collides with the red fish
         if (collision.gameObject.tag == "BlueStar" && gameObject.tag == "RedFish")
@@ -66,7 +72,8 @@ public class FishCollision : MonoBehaviour
             collision.gameObject.SetActive(false);
             lm.addBlueScore();
             UpSize();
-            soundEffects[1].Play(); //plays the good star collision sfx
+            listOfStarNotes[noteIndex].Play(); //plays the good star collision sfx
+            noteIndex++;
         }
         //is called when the red star collides with the blue fish
         if(collision.gameObject.tag == "RedStar" &&  gameObject.tag == "BlueFish")
