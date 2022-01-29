@@ -7,6 +7,8 @@ public class FishCollision : MonoBehaviour
     [SerializeField]
     GameObject levelManager;
     LevelManager lm;
+    [SerializeField]
+    float sizeChange;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +29,14 @@ public class FishCollision : MonoBehaviour
         {
             Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
             lm.removeRedScore();
+            
         }
         if (collision.gameObject.tag == "RedStar" && gameObject.tag == "RedFish")
         {
             collision.gameObject.SetActive(false);
             lm.addRedScore();
+            UpSize();
+
         }
         if (collision.gameObject.tag == "BlueStar" && gameObject.tag == "RedFish")
         {
@@ -46,10 +51,16 @@ public class FishCollision : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             lm.addBlueScore();
+            UpSize();
         }
         if(collision.gameObject.tag == "RedStar" &&  gameObject.tag == "BlueFish")
         {
             Debug.Log("red orb blue fish collision");
         }
+    }
+
+    private void UpSize()
+    {
+        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x*sizeChange, gameObject.transform.localScale.y*sizeChange,0);
     }
 }
