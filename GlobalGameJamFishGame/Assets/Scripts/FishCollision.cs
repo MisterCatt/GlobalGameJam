@@ -9,6 +9,7 @@ public class FishCollision : MonoBehaviour
     LevelManager lm;
     [SerializeField]
     float sizeChange;
+    public List<AudioSource> soundEffects = new List<AudioSource>();
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,8 @@ public class FishCollision : MonoBehaviour
             lm.removeRedScore();
             DownSize();
             collision.gameObject.SetActive(false);
-            
+            soundEffects[0].Play(); //plays the commet collision sfx
+
         }
         //Is called when the red fish collides with the red star
         if (collision.gameObject.tag == "RedStar" && gameObject.tag == "RedFish")
@@ -41,6 +43,7 @@ public class FishCollision : MonoBehaviour
             UpSize();
             //PLAY A FANCY ROCK SMASH ANIMATION AND MAKE A FANCY ROCK SMASH SOUND
             collision.gameObject.SetActive(false);
+            soundEffects[1].Play(); //plays the good star collision sfx
         }
         //Is called when the blue star collides with the red fish
         if (collision.gameObject.tag == "BlueStar" && gameObject.tag == "RedFish")
@@ -55,6 +58,7 @@ public class FishCollision : MonoBehaviour
             DownSize();
             //PLAY A FANCY ROCK SMASH ANIMATION AND MAKE A FANCY ROCK SMASH SOUND
             collision.gameObject.SetActive(false);
+            soundEffects[0].Play(); //plays the commet collision sfx
         }
         //is called when the blue star collides with the blue fish
         if(collision.gameObject.tag == "BlueStar" && gameObject.tag == "BlueFish")
@@ -62,11 +66,13 @@ public class FishCollision : MonoBehaviour
             collision.gameObject.SetActive(false);
             lm.addBlueScore();
             UpSize();
+            soundEffects[1].Play(); //plays the good star collision sfx
         }
         //is called when the red star collides with the blue fish
         if(collision.gameObject.tag == "RedStar" &&  gameObject.tag == "BlueFish")
         {
             Debug.Log("red orb blue fish collision");
+            soundEffects[2].Play(); //plays the bad star collision sfx
         }
     }
     //Code that makes the fish larger (is called in the the blue on blue or red on red collision check)
