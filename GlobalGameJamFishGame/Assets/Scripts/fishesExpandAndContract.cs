@@ -37,7 +37,7 @@ public class fishesExpandAndContract : MonoBehaviour
                 temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y, 2));
 
                 if (rotationSpeed > minSpeed)
-                    rotationSpeed--;
+                    rotationSpeed-=plussSpeed;
             }
         }
 
@@ -50,7 +50,7 @@ public class fishesExpandAndContract : MonoBehaviour
                 temporaryRadius = Mathf.Sqrt(Mathf.Pow(fish1.transform.position.x - fish2.transform.position.x, 2) + Mathf.Pow(fish1.transform.position.y - fish2.transform.position.y, 2));
 
                 if (rotationSpeed < maxSpeed)
-                    rotationSpeed++;
+                    rotationSpeed+=plussSpeed;
 
             }
         }
