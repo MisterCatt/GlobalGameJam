@@ -312,7 +312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 330.3, y: -152.4}
+  m_AnchoredPosition: {x: 336, y: -152.4}
   m_SizeDelta: {x: 93.1396, y: 40.2163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186801399
@@ -6415,7 +6415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSprite1: {fileID: 21300000, guid: 89721357b1bef3a49aabdfb4f3a4d0e4, type: 3}
   newSprite2: {fileID: 21300000, guid: e1892f7b15a679b4f9fad8805a057cb7, type: 3}
-  newSprite3: {fileID: 21300000, guid: e1892f7b15a679b4f9fad8805a057cb7, type: 3}
+  newSprite3: {fileID: 21300000, guid: c776326d77451f748a1a9f47df24e816, type: 3}
+  image: {fileID: 1947995732}
 --- !u!114 &1947995732
 MonoBehaviour:
   m_ObjectHideFlags: 0

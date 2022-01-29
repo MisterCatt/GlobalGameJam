@@ -10,8 +10,6 @@ public class AmmountCheck : MonoBehaviour
     public int AmmountCollectedBlue, AmmountCollectedOrange;
     GameObject obj1, obj2, lm;
     LevelManager levelManager;
-    Sprite sp;
-    Texture2D txt;
     public Image image1, image2;
 
     void Start()
