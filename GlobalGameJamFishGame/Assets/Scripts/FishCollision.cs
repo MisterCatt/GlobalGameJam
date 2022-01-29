@@ -31,15 +31,16 @@ public class FishCollision : MonoBehaviour
             Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
             lm.removeRedScore();
             DownSize();
+            collision.gameObject.SetActive(false);
             
         }
         //Is called when the red fish collides with the red star
         if (collision.gameObject.tag == "RedStar" && gameObject.tag == "RedFish")
         {
-            collision.gameObject.SetActive(false);
             lm.addRedScore();
             UpSize();
-
+            //PLAY A FANCY ROCK SMASH ANIMATION AND MAKE A FANCY ROCK SMASH SOUND
+            collision.gameObject.SetActive(false);
         }
         //Is called when the blue star collides with the red fish
         if (collision.gameObject.tag == "BlueStar" && gameObject.tag == "RedFish")
@@ -52,6 +53,8 @@ public class FishCollision : MonoBehaviour
         {
             lm.removeBlueScore();
             DownSize();
+            //PLAY A FANCY ROCK SMASH ANIMATION AND MAKE A FANCY ROCK SMASH SOUND
+            collision.gameObject.SetActive(false);
         }
         //is called when the blue star collides with the blue fish
         if(collision.gameObject.tag == "BlueStar" && gameObject.tag == "BlueFish")
