@@ -6,20 +6,22 @@ public class MusicLoopManagement : MonoBehaviour
 {
     public AudioSource track;
     public AudioSource trackEcho;
+    float currentTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        track.Play();
+        currentTime = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!track.isPlaying)
+        currentTime += Time.deltaTime;
+        if (track.clip.length < currentTime)
         {
-            track.Play();
             trackEcho.Play();
+            currentTime = 0;
         }
     }
 }
