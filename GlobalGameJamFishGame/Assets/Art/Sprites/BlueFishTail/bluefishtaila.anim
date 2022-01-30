@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: redtailanimation
+  m_Name: bluefishtaila
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -23,21 +23,21 @@ AnimationClip:
       value: {fileID: 21300000, guid: ce3a1dee781e7ba439be96fd411368b8, type: 3}
     - time: 0.06666667
       value: {fileID: 21300000, guid: b639a7a823a9ac0439fecde776dcdeee, type: 3}
-    - time: 0.13333334
+    - time: 0.11666667
       value: {fileID: 21300000, guid: cbb834206c60fbc4ab53bbce1a5057b5, type: 3}
-    - time: 0.2
+    - time: 0.16666667
       value: {fileID: 21300000, guid: badf652b3c623fb4fac3908cdba6632f, type: 3}
-    - time: 0.26666668
+    - time: 0.21666667
       value: {fileID: 21300000, guid: b36fa0d1e1c7201429cdde3cd8bf44f6, type: 3}
-    - time: 0.31666666
+    - time: 0.28333333
       value: {fileID: 21300000, guid: 2b46d9f6c121e2c4fa585d8ca1bcffb8, type: 3}
-    - time: 0.38333333
+    - time: 0.33333334
       value: {fileID: 21300000, guid: 8d46ae0d35157e64eaedc2ffb418e0ed, type: 3}
-    - time: 0.45
+    - time: 0.38333333
       value: {fileID: 21300000, guid: 6505d7aafb52aa242922f1bc3868772b, type: 3}
-    - time: 0.51666665
+    - time: 0.43333334
       value: {fileID: 21300000, guid: ef5c427b9baeefb44be01aca31a7ce76, type: 3}
-    - time: 0.5833333
+    - time: 0.5
       value: {fileID: 21300000, guid: bfa164778fffd1a4ea091ff4be922d67, type: 3}
     attribute: m_Sprite
     path: 
@@ -73,7 +73,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.59999996
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
