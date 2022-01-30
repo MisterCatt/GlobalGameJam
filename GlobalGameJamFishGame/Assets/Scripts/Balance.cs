@@ -44,7 +44,7 @@ public class Balance : MonoBehaviour
             Orange.transform.position = pos2;
 
         }
-        else if (AC1.AmmountCollectedBlue > AC2.AmmountCollectedOrange)
+        else if (AC1.AmmountCollectedBlue < AC2.AmmountCollectedOrange)
         {
            
                 Blue.transform.position =pos1high;
@@ -56,7 +56,7 @@ public class Balance : MonoBehaviour
            
             
         }
-        else if (AC1.AmmountCollectedBlue < AC2.AmmountCollectedOrange)
+        else if (AC1.AmmountCollectedBlue > AC2.AmmountCollectedOrange)
         {
            
                 Orange.transform.position = pos2high;
