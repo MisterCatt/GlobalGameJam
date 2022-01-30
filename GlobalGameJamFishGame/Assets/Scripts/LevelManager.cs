@@ -116,6 +116,8 @@ public class LevelManager : MonoBehaviour
     {
         om.enabled = false;
         Debug.Log("Fish fusion activate!");
+        // play white fish animation
+        // dissable fish , reset speed apply a new sprite to anchor
     }
    
 }
