@@ -3898,7 +3898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxRadius: 20
-  minRadius: 2.5
+  minRadius: 5
   radiusChangeSpeed: 0.25
   upDownSpeed: 0.5
   leftRightSpeed: 0.5
