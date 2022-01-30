@@ -154,7 +154,7 @@ Transform:
   m_LocalScale: {x: 2.1778653, y: 1.8050708, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 65
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &7186766
 CircleCollider2D:
@@ -253,6 +253,8 @@ GameObject:
   - component: {fileID: 19271269}
   - component: {fileID: 19271271}
   - component: {fileID: 19271270}
+  - component: {fileID: 19271272}
+  - component: {fileID: 19271273}
   m_Layer: 0
   m_Name: Asteroid_1_brown (34)
   m_TagString: Obstacle
@@ -272,7 +274,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 53
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &19271270
 PolygonCollider2D:
@@ -399,6 +401,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &19271272
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19271268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &19271273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19271268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 19271272}
 --- !u!1 &36735589
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +444,8 @@ GameObject:
   - component: {fileID: 36735590}
   - component: {fileID: 36735592}
   - component: {fileID: 36735591}
+  - component: {fileID: 36735593}
+  - component: {fileID: 36735594}
   m_Layer: 0
   m_Name: Asteroid_1_brown (21)
   m_TagString: Obstacle
@@ -425,11 +461,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36735589}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 45, y: -19.42, z: 0.7276154}
+  m_LocalPosition: {x: 44, y: -18.3, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 35
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &36735591
 PolygonCollider2D:
@@ -556,163 +592,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &57497797
-GameObject:
+--- !u!95 &36735593
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 57497798}
-  - component: {fileID: 57497800}
-  - component: {fileID: 57497799}
-  m_Layer: 0
-  m_Name: Asteroid_1_brown (22)
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &57497798
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57497797}
-  m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 42.01, y: -12.05, z: 0.7276154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1606096388}
-  m_RootOrder: 36
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
---- !u!60 &57497799
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57497797}
+  m_GameObject: {fileID: 36735589}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.51, y: 3.65}
-    newSize: {x: 3.51, y: 3.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.945, y: -0.945}
-      - {x: 1.015, y: -0.85499996}
-      - {x: 1.0849999, y: -0.72499996}
-      - {x: 1.145, y: -0.53499997}
-      - {x: 1.145, y: -0.39499998}
-      - {x: 1.185, y: -0.325}
-      - {x: 1.2149999, y: -0.265}
-      - {x: 1.245, y: -0.074999996}
-      - {x: 1.245, y: 0.015}
-      - {x: 1.185, y: 0.065}
-      - {x: 1.155, y: 0.095}
-      - {x: 1.155, y: 0.235}
-      - {x: 1.055, y: 0.525}
-      - {x: 0.97499996, y: 0.72499996}
-      - {x: 0.865, y: 0.835}
-      - {x: 0.775, y: 0.885}
-      - {x: 0.60499996, y: 0.935}
-      - {x: 0.405, y: 1.025}
-      - {x: 0.175, y: 1.165}
-      - {x: 0.065, y: 1.185}
-      - {x: -0.015, y: 1.115}
-      - {x: -0.185, y: 1.245}
-      - {x: -0.265, y: 1.245}
-      - {x: -0.415, y: 1.175}
-      - {x: -0.775, y: 0.965}
-      - {x: -0.895, y: 0.835}
-      - {x: -0.945, y: 0.705}
-      - {x: -1.0849999, y: 0.615}
-      - {x: -1.265, y: 0.435}
-      - {x: -1.265, y: 0.275}
-      - {x: -1.255, y: 0.13499999}
-      - {x: -1.235, y: -0.085}
-      - {x: -1.125, y: -0.585}
-      - {x: -1.095, y: -0.66499996}
-      - {x: -1.035, y: -0.755}
-      - {x: -0.885, y: -0.875}
-      - {x: -0.685, y: -0.995}
-      - {x: -0.505, y: -0.98499995}
-      - {x: -0.475, y: -1.115}
-      - {x: -0.39499998, y: -1.185}
-      - {x: -0.185, y: -1.175}
-      - {x: 0.085, y: -1.135}
-      - {x: 0.145, y: -1.2049999}
-      - {x: 0.285, y: -1.245}
-      - {x: 0.33499998, y: -1.255}
-      - {x: 0.415, y: -1.255}
-      - {x: 0.465, y: -1.235}
-      - {x: 0.715, y: -1.025}
-      - {x: 0.815, y: -1.005}
---- !u!212 &57497800
-SpriteRenderer:
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &36735594
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57497797}
+  m_GameObject: {fileID: 36735589}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2307933f7cbea4c4ebc28fe198a0fa15, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.51, y: 3.65}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 36735593}
 --- !u!1 &58508616
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +773,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 74
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &77534065
 PolygonCollider2D:
@@ -1219,7 +1130,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &198906176
+--- !u!1 &194957181
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1227,111 +1138,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 198906177}
-  - component: {fileID: 198906179}
-  - component: {fileID: 198906178}
+  - component: {fileID: 194957182}
+  - component: {fileID: 194957184}
+  - component: {fileID: 194957183}
   m_Layer: 0
-  m_Name: Asteroid_1_brown (9)
-  m_TagString: Obstacle
+  m_Name: Level_2_Background (1)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &198906177
+--- !u!4 &194957182
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198906176}
-  m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 23.3, y: 8.5, z: 0.7276154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 194957181}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 424.7, y: -3.4, z: 0.7276154}
+  m_LocalScale: {x: 5.848957, y: 5.848957, z: 5.848957}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
---- !u!60 &198906178
-PolygonCollider2D:
+  m_RootOrder: 72
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194957183
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198906176}
+  m_GameObject: {fileID: 194957181}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.51, y: 3.65}
-    newSize: {x: 3.51, y: 3.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.945, y: -0.945}
-      - {x: 1.015, y: -0.85499996}
-      - {x: 1.0849999, y: -0.72499996}
-      - {x: 1.145, y: -0.53499997}
-      - {x: 1.145, y: -0.39499998}
-      - {x: 1.185, y: -0.325}
-      - {x: 1.2149999, y: -0.265}
-      - {x: 1.245, y: -0.074999996}
-      - {x: 1.245, y: 0.015}
-      - {x: 1.185, y: 0.065}
-      - {x: 1.155, y: 0.095}
-      - {x: 1.155, y: 0.235}
-      - {x: 1.055, y: 0.525}
-      - {x: 0.97499996, y: 0.72499996}
-      - {x: 0.865, y: 0.835}
-      - {x: 0.775, y: 0.885}
-      - {x: 0.60499996, y: 0.935}
-      - {x: 0.405, y: 1.025}
-      - {x: 0.175, y: 1.165}
-      - {x: 0.065, y: 1.185}
-      - {x: -0.015, y: 1.115}
-      - {x: -0.185, y: 1.245}
-      - {x: -0.265, y: 1.245}
-      - {x: -0.415, y: 1.175}
-      - {x: -0.775, y: 0.965}
-      - {x: -0.895, y: 0.835}
-      - {x: -0.945, y: 0.705}
-      - {x: -1.0849999, y: 0.615}
-      - {x: -1.265, y: 0.435}
-      - {x: -1.265, y: 0.275}
-      - {x: -1.255, y: 0.13499999}
-      - {x: -1.235, y: -0.085}
-      - {x: -1.125, y: -0.585}
-      - {x: -1.095, y: -0.66499996}
-      - {x: -1.035, y: -0.755}
-      - {x: -0.885, y: -0.875}
-      - {x: -0.685, y: -0.995}
-      - {x: -0.505, y: -0.98499995}
-      - {x: -0.475, y: -1.115}
-      - {x: -0.39499998, y: -1.185}
-      - {x: -0.185, y: -1.175}
-      - {x: 0.085, y: -1.135}
-      - {x: 0.145, y: -1.2049999}
-      - {x: 0.285, y: -1.245}
-      - {x: 0.33499998, y: -1.255}
-      - {x: 0.415, y: -1.255}
-      - {x: 0.465, y: -1.235}
-      - {x: 0.715, y: -1.025}
-      - {x: 0.815, y: -1.005}
---- !u!212 &198906179
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8299a58cf88bed047907e3bb68af743e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles: {fileID: 1606096386}
+  screenTwo: {fileID: 1058285039}
+--- !u!212 &194957184
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198906176}
+  m_GameObject: {fileID: 194957181}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -1364,13 +1215,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2307933f7cbea4c4ebc28fe198a0fa15, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 6449a17f37346be40b96b471d0c9228a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.51, y: 3.65}
+  m_Size: {x: 53.879997, y: 10.812833}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1387,6 +1238,8 @@ GameObject:
   - component: {fileID: 217868229}
   - component: {fileID: 217868231}
   - component: {fileID: 217868230}
+  - component: {fileID: 217868232}
+  - component: {fileID: 217868233}
   m_Layer: 0
   m_Name: Asteroid_1_brown (18)
   m_TagString: Obstacle
@@ -1402,11 +1255,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217868228}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 62.3, y: -9.6, z: 0.7276154}
+  m_LocalPosition: {x: 65.9, y: -11.6, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 32
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &217868230
 PolygonCollider2D:
@@ -1533,6 +1386,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &217868232
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217868228}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &217868233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217868228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 217868232}
 --- !u!1 &238502119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,6 +1429,8 @@ GameObject:
   - component: {fileID: 238502120}
   - component: {fileID: 238502122}
   - component: {fileID: 238502121}
+  - component: {fileID: 238502123}
+  - component: {fileID: 238502124}
   m_Layer: 0
   m_Name: Asteroid_1_brown (26)
   m_TagString: Obstacle
@@ -1563,7 +1450,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 40
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &238502121
 PolygonCollider2D:
@@ -1690,6 +1577,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &238502123
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238502119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &238502124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238502119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 238502123}
 --- !u!1 &259450188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1640,7 @@ Transform:
   m_LocalScale: {x: 2.1778653, y: 1.8050708, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 70
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &259450190
 CircleCollider2D:
@@ -1820,6 +1739,8 @@ GameObject:
   - component: {fileID: 277802651}
   - component: {fileID: 277802653}
   - component: {fileID: 277802652}
+  - component: {fileID: 277802654}
+  - component: {fileID: 277802655}
   m_Layer: 0
   m_Name: Asteroid_1_brown (15)
   m_TagString: Obstacle
@@ -1835,11 +1756,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277802650}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 20.9, y: -25.9, z: 0.7276154}
+  m_LocalPosition: {x: 15.4, y: -25.9, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 29
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &277802652
 PolygonCollider2D:
@@ -1966,6 +1887,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &277802654
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277802650}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &277802655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277802650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 277802654}
 --- !u!1 &278412478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,11 +2064,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287927396}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 42.8, y: 8.5, z: 0.7276154}
+  m_LocalPosition: {x: 43.2, y: 10.8, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 71
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &287927398
 PolygonCollider2D:
@@ -2273,7 +2226,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 60
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &292413450
 CircleCollider2D:
@@ -2638,7 +2591,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 59
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &308808507
 CircleCollider2D:
@@ -2737,6 +2690,8 @@ GameObject:
   - component: {fileID: 312941577}
   - component: {fileID: 312941579}
   - component: {fileID: 312941578}
+  - component: {fileID: 312941580}
+  - component: {fileID: 312941581}
   m_Layer: 0
   m_Name: Asteroid_1_brown (25)
   m_TagString: Obstacle
@@ -2756,7 +2711,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 39
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &312941578
 PolygonCollider2D:
@@ -2883,6 +2838,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &312941580
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312941576}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &312941581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312941576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 312941580}
 --- !u!1 &339840170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,6 +3000,8 @@ GameObject:
   - component: {fileID: 350852282}
   - component: {fileID: 350852284}
   - component: {fileID: 350852283}
+  - component: {fileID: 350852285}
+  - component: {fileID: 350852286}
   m_Layer: 0
   m_Name: Asteroid_1_brown (35)
   m_TagString: Obstacle
@@ -3032,7 +3021,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 48
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &350852283
 PolygonCollider2D:
@@ -3159,163 +3148,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &372875215
-GameObject:
+--- !u!95 &350852285
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 372875216}
-  - component: {fileID: 372875218}
-  - component: {fileID: 372875217}
-  m_Layer: 0
-  m_Name: Asteroid_1_brown (14)
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &372875216
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372875215}
-  m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 13.6, y: -12.4, z: 0.7276154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1606096388}
-  m_RootOrder: 28
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
---- !u!60 &372875217
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372875215}
+  m_GameObject: {fileID: 350852281}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.51, y: 3.65}
-    newSize: {x: 3.51, y: 3.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.945, y: -0.945}
-      - {x: 1.015, y: -0.85499996}
-      - {x: 1.0849999, y: -0.72499996}
-      - {x: 1.145, y: -0.53499997}
-      - {x: 1.145, y: -0.39499998}
-      - {x: 1.185, y: -0.325}
-      - {x: 1.2149999, y: -0.265}
-      - {x: 1.245, y: -0.074999996}
-      - {x: 1.245, y: 0.015}
-      - {x: 1.185, y: 0.065}
-      - {x: 1.155, y: 0.095}
-      - {x: 1.155, y: 0.235}
-      - {x: 1.055, y: 0.525}
-      - {x: 0.97499996, y: 0.72499996}
-      - {x: 0.865, y: 0.835}
-      - {x: 0.775, y: 0.885}
-      - {x: 0.60499996, y: 0.935}
-      - {x: 0.405, y: 1.025}
-      - {x: 0.175, y: 1.165}
-      - {x: 0.065, y: 1.185}
-      - {x: -0.015, y: 1.115}
-      - {x: -0.185, y: 1.245}
-      - {x: -0.265, y: 1.245}
-      - {x: -0.415, y: 1.175}
-      - {x: -0.775, y: 0.965}
-      - {x: -0.895, y: 0.835}
-      - {x: -0.945, y: 0.705}
-      - {x: -1.0849999, y: 0.615}
-      - {x: -1.265, y: 0.435}
-      - {x: -1.265, y: 0.275}
-      - {x: -1.255, y: 0.13499999}
-      - {x: -1.235, y: -0.085}
-      - {x: -1.125, y: -0.585}
-      - {x: -1.095, y: -0.66499996}
-      - {x: -1.035, y: -0.755}
-      - {x: -0.885, y: -0.875}
-      - {x: -0.685, y: -0.995}
-      - {x: -0.505, y: -0.98499995}
-      - {x: -0.475, y: -1.115}
-      - {x: -0.39499998, y: -1.185}
-      - {x: -0.185, y: -1.175}
-      - {x: 0.085, y: -1.135}
-      - {x: 0.145, y: -1.2049999}
-      - {x: 0.285, y: -1.245}
-      - {x: 0.33499998, y: -1.255}
-      - {x: 0.415, y: -1.255}
-      - {x: 0.465, y: -1.235}
-      - {x: 0.715, y: -1.025}
-      - {x: 0.815, y: -1.005}
---- !u!212 &372875218
-SpriteRenderer:
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &350852286
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372875215}
+  m_GameObject: {fileID: 350852281}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2307933f7cbea4c4ebc28fe198a0fa15, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.51, y: 3.65}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 350852285}
 --- !u!1 &387135069
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,7 +3211,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 61
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &387135071
 CircleCollider2D:
@@ -3446,6 +3310,8 @@ GameObject:
   - component: {fileID: 447962985}
   - component: {fileID: 447962987}
   - component: {fileID: 447962986}
+  - component: {fileID: 447962988}
+  - component: {fileID: 447962989}
   m_Layer: 0
   m_Name: Asteroid_1_brown (33)
   m_TagString: Obstacle
@@ -3465,7 +3331,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 47
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &447962986
 PolygonCollider2D:
@@ -3592,6 +3458,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &447962988
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447962984}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &447962989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447962984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 447962988}
 --- !u!1 &463975660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,7 +3521,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 57
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &463975662
 CircleCollider2D:
@@ -3722,6 +3620,8 @@ GameObject:
   - component: {fileID: 516357076}
   - component: {fileID: 516357078}
   - component: {fileID: 516357077}
+  - component: {fileID: 516357079}
+  - component: {fileID: 516357080}
   m_Layer: 0
   m_Name: Asteroid_1_brown (20)
   m_TagString: Obstacle
@@ -3741,7 +3641,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 34
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &516357077
 PolygonCollider2D:
@@ -3868,6 +3768,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &516357079
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516357075}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &516357080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516357075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 516357079}
 --- !u!1 &536682719
 GameObject:
   m_ObjectHideFlags: 0
@@ -4065,6 +3997,8 @@ GameObject:
   - component: {fileID: 608831196}
   - component: {fileID: 608831198}
   - component: {fileID: 608831197}
+  - component: {fileID: 608831199}
+  - component: {fileID: 608831200}
   m_Layer: 0
   m_Name: Asteroid_1_brown (17)
   m_TagString: Obstacle
@@ -4084,7 +4018,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 31
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &608831197
 PolygonCollider2D:
@@ -4211,163 +4145,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &633305358
-GameObject:
+--- !u!95 &608831199
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 633305359}
-  - component: {fileID: 633305361}
-  - component: {fileID: 633305360}
-  m_Layer: 0
-  m_Name: Asteroid_1_brown (38)
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &633305359
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633305358}
-  m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 72.3, y: 7.5, z: 0.7276154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1606096388}
-  m_RootOrder: 51
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
---- !u!60 &633305360
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633305358}
+  m_GameObject: {fileID: 608831195}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.51, y: 3.65}
-    newSize: {x: 3.51, y: 3.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.945, y: -0.945}
-      - {x: 1.015, y: -0.85499996}
-      - {x: 1.0849999, y: -0.72499996}
-      - {x: 1.145, y: -0.53499997}
-      - {x: 1.145, y: -0.39499998}
-      - {x: 1.185, y: -0.325}
-      - {x: 1.2149999, y: -0.265}
-      - {x: 1.245, y: -0.074999996}
-      - {x: 1.245, y: 0.015}
-      - {x: 1.185, y: 0.065}
-      - {x: 1.155, y: 0.095}
-      - {x: 1.155, y: 0.235}
-      - {x: 1.055, y: 0.525}
-      - {x: 0.97499996, y: 0.72499996}
-      - {x: 0.865, y: 0.835}
-      - {x: 0.775, y: 0.885}
-      - {x: 0.60499996, y: 0.935}
-      - {x: 0.405, y: 1.025}
-      - {x: 0.175, y: 1.165}
-      - {x: 0.065, y: 1.185}
-      - {x: -0.015, y: 1.115}
-      - {x: -0.185, y: 1.245}
-      - {x: -0.265, y: 1.245}
-      - {x: -0.415, y: 1.175}
-      - {x: -0.775, y: 0.965}
-      - {x: -0.895, y: 0.835}
-      - {x: -0.945, y: 0.705}
-      - {x: -1.0849999, y: 0.615}
-      - {x: -1.265, y: 0.435}
-      - {x: -1.265, y: 0.275}
-      - {x: -1.255, y: 0.13499999}
-      - {x: -1.235, y: -0.085}
-      - {x: -1.125, y: -0.585}
-      - {x: -1.095, y: -0.66499996}
-      - {x: -1.035, y: -0.755}
-      - {x: -0.885, y: -0.875}
-      - {x: -0.685, y: -0.995}
-      - {x: -0.505, y: -0.98499995}
-      - {x: -0.475, y: -1.115}
-      - {x: -0.39499998, y: -1.185}
-      - {x: -0.185, y: -1.175}
-      - {x: 0.085, y: -1.135}
-      - {x: 0.145, y: -1.2049999}
-      - {x: 0.285, y: -1.245}
-      - {x: 0.33499998, y: -1.255}
-      - {x: 0.415, y: -1.255}
-      - {x: 0.465, y: -1.235}
-      - {x: 0.715, y: -1.025}
-      - {x: 0.815, y: -1.005}
---- !u!212 &633305361
-SpriteRenderer:
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &608831200
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633305358}
+  m_GameObject: {fileID: 608831195}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2307933f7cbea4c4ebc28fe198a0fa15, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.51, y: 3.65}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 608831199}
 --- !u!1 &635609826
 GameObject:
   m_ObjectHideFlags: 0
@@ -4379,6 +4188,8 @@ GameObject:
   - component: {fileID: 635609827}
   - component: {fileID: 635609829}
   - component: {fileID: 635609828}
+  - component: {fileID: 635609830}
+  - component: {fileID: 635609831}
   m_Layer: 0
   m_Name: Asteroid_1_brown (31)
   m_TagString: Obstacle
@@ -4398,7 +4209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 45
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &635609828
 PolygonCollider2D:
@@ -4525,6 +4336,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &635609830
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635609826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &635609831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635609826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 635609830}
 --- !u!1 &647476471
 GameObject:
   m_ObjectHideFlags: 0
@@ -4627,18 +4470,18 @@ MonoBehaviour:
   levelManager: {fileID: 1550883919}
   sizeChange: 1.1
   soundEffects:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2066058236}
+  - {fileID: 189261277}
   - {fileID: 0}
   listOfStarNotes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1083592432}
+  - {fileID: 1001836231}
+  - {fileID: 881612785}
+  - {fileID: 1941886795}
+  - {fileID: 305401326}
+  - {fileID: 747618526}
+  - {fileID: 1918692467}
+  - {fileID: 1125163085}
 --- !u!212 &647476476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4716,6 +4559,8 @@ GameObject:
   - component: {fileID: 708662158}
   - component: {fileID: 708662160}
   - component: {fileID: 708662159}
+  - component: {fileID: 708662161}
+  - component: {fileID: 708662162}
   m_Layer: 0
   m_Name: Asteroid_1_brown (28)
   m_TagString: Obstacle
@@ -4735,7 +4580,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 42
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &708662159
 PolygonCollider2D:
@@ -4862,6 +4707,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &708662161
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708662157}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &708662162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708662157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 708662161}
 --- !u!1 &747618524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5095,14 +4972,14 @@ MonoBehaviour:
   - {fileID: 189261277}
   - {fileID: 0}
   listOfStarNotes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1083592432}
+  - {fileID: 1001836231}
+  - {fileID: 881612785}
+  - {fileID: 1941886795}
+  - {fileID: 305401326}
+  - {fileID: 747618526}
+  - {fileID: 1918692467}
+  - {fileID: 1125163085}
 --- !u!212 &756404948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5200,7 +5077,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 62
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &766498600
 CircleCollider2D:
@@ -5401,6 +5278,8 @@ GameObject:
   - component: {fileID: 787031234}
   - component: {fileID: 787031236}
   - component: {fileID: 787031235}
+  - component: {fileID: 787031237}
+  - component: {fileID: 787031238}
   m_Layer: 0
   m_Name: Asteroid_1_brown (4)
   m_TagString: Obstacle
@@ -5420,7 +5299,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &787031235
 PolygonCollider2D:
@@ -5547,6 +5426,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &787031237
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787031233}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &787031238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787031233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 787031237}
 --- !u!1 &800800355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5578,7 +5489,7 @@ Transform:
   m_LocalScale: {x: 2.1778653, y: 1.8050708, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 67
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &800800357
 CircleCollider2D:
@@ -5677,6 +5588,8 @@ GameObject:
   - component: {fileID: 807259458}
   - component: {fileID: 807259460}
   - component: {fileID: 807259459}
+  - component: {fileID: 807259461}
+  - component: {fileID: 807259462}
   m_Layer: 0
   m_Name: Asteroid_1_brown (27)
   m_TagString: Obstacle
@@ -5696,7 +5609,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 41
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &807259459
 PolygonCollider2D:
@@ -5823,6 +5736,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &807259461
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807259457}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &807259462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807259457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 807259461}
 --- !u!1 &815421925
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,7 +5798,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 76
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &815421927
 PolygonCollider2D:
@@ -6011,7 +5956,7 @@ Transform:
   m_LocalScale: {x: 2.1778653, y: 1.8050708, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 66
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &826468841
 CircleCollider2D:
@@ -6130,7 +6075,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 54
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &876202638
 CircleCollider2D:
@@ -6503,7 +6448,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 55
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &911837722
 CircleCollider2D:
@@ -6602,6 +6547,8 @@ GameObject:
   - component: {fileID: 932127084}
   - component: {fileID: 932127086}
   - component: {fileID: 932127085}
+  - component: {fileID: 932127087}
+  - component: {fileID: 932127088}
   m_Layer: 0
   m_Name: Asteroid_1_brown (3)
   m_TagString: Obstacle
@@ -6617,11 +6564,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932127083}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 7.3, y: 2.1, z: 0.7276154}
+  m_LocalPosition: {x: 4.2, y: 4.4, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &932127085
 PolygonCollider2D:
@@ -6748,6 +6695,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &932127087
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932127083}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &932127088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932127083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 932127087}
 --- !u!1 &933428270
 GameObject:
   m_ObjectHideFlags: 0
@@ -6759,6 +6738,8 @@ GameObject:
   - component: {fileID: 933428271}
   - component: {fileID: 933428273}
   - component: {fileID: 933428272}
+  - component: {fileID: 933428274}
+  - component: {fileID: 933428275}
   m_Layer: 0
   m_Name: Asteroid_1_brown (30)
   m_TagString: Obstacle
@@ -6778,7 +6759,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 44
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &933428272
 PolygonCollider2D:
@@ -6905,6 +6886,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &933428274
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933428270}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &933428275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933428270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 933428274}
 --- !u!1 &952898834
 GameObject:
   m_ObjectHideFlags: 0
@@ -7010,6 +7023,8 @@ GameObject:
   - component: {fileID: 954260487}
   - component: {fileID: 954260489}
   - component: {fileID: 954260488}
+  - component: {fileID: 954260490}
+  - component: {fileID: 954260491}
   m_Layer: 0
   m_Name: Asteroid_1_brown (39)
   m_TagString: Obstacle
@@ -7029,7 +7044,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 52
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &954260488
 PolygonCollider2D:
@@ -7156,6 +7171,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &954260490
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954260486}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &954260491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954260486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 954260490}
 --- !u!1 &960522324
 GameObject:
   m_ObjectHideFlags: 0
@@ -7167,6 +7214,8 @@ GameObject:
   - component: {fileID: 960522325}
   - component: {fileID: 960522327}
   - component: {fileID: 960522326}
+  - component: {fileID: 960522328}
+  - component: {fileID: 960522329}
   m_Layer: 0
   m_Name: Asteroid_1_brown (1)
   m_TagString: Obstacle
@@ -7182,7 +7231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960522324}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 24, y: -11.1, z: 0.7276154}
+  m_LocalPosition: {x: 23.89, y: -11.21, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
@@ -7313,6 +7362,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &960522328
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960522324}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &960522329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960522324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1 &963369395
 GameObject:
   m_ObjectHideFlags: 0
@@ -7324,6 +7405,8 @@ GameObject:
   - component: {fileID: 963369396}
   - component: {fileID: 963369398}
   - component: {fileID: 963369397}
+  - component: {fileID: 963369399}
+  - component: {fileID: 963369400}
   m_Layer: 0
   m_Name: Asteroid_1_brown (6)
   m_TagString: Obstacle
@@ -7343,7 +7426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &963369397
 PolygonCollider2D:
@@ -7470,6 +7553,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &963369399
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963369395}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &963369400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963369395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 963369399}
 --- !u!1 &988218106
 GameObject:
   m_ObjectHideFlags: 0
@@ -7726,6 +7841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058285041}
   - component: {fileID: 1058285040}
+  - component: {fileID: 1058285042}
   m_Layer: 0
   m_Name: Level_2_Background
   m_TagString: Untagged
@@ -7798,6 +7914,20 @@ Transform:
   m_Father: {fileID: 1606096388}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1058285042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058285039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8299a58cf88bed047907e3bb68af743e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles: {fileID: 1606096386}
+  screenTwo: {fileID: 194957181}
 --- !u!1 &1083592430
 GameObject:
   m_ObjectHideFlags: 0
@@ -8301,6 +8431,8 @@ GameObject:
   - component: {fileID: 1196583937}
   - component: {fileID: 1196583939}
   - component: {fileID: 1196583938}
+  - component: {fileID: 1196583940}
+  - component: {fileID: 1196583941}
   m_Layer: 0
   m_Name: Asteroid_1_brown (5)
   m_TagString: Obstacle
@@ -8320,7 +8452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1196583938
 PolygonCollider2D:
@@ -8447,163 +8579,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1202136264
-GameObject:
+--- !u!95 &1196583940
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1202136265}
-  - component: {fileID: 1202136267}
-  - component: {fileID: 1202136266}
-  m_Layer: 0
-  m_Name: Asteroid_1_brown (11)
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1202136265
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202136264}
-  m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 16.8, y: 3, z: 0.7276154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1606096388}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
---- !u!60 &1202136266
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202136264}
+  m_GameObject: {fileID: 1196583936}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.51, y: 3.65}
-    newSize: {x: 3.51, y: 3.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.945, y: -0.945}
-      - {x: 1.015, y: -0.85499996}
-      - {x: 1.0849999, y: -0.72499996}
-      - {x: 1.145, y: -0.53499997}
-      - {x: 1.145, y: -0.39499998}
-      - {x: 1.185, y: -0.325}
-      - {x: 1.2149999, y: -0.265}
-      - {x: 1.245, y: -0.074999996}
-      - {x: 1.245, y: 0.015}
-      - {x: 1.185, y: 0.065}
-      - {x: 1.155, y: 0.095}
-      - {x: 1.155, y: 0.235}
-      - {x: 1.055, y: 0.525}
-      - {x: 0.97499996, y: 0.72499996}
-      - {x: 0.865, y: 0.835}
-      - {x: 0.775, y: 0.885}
-      - {x: 0.60499996, y: 0.935}
-      - {x: 0.405, y: 1.025}
-      - {x: 0.175, y: 1.165}
-      - {x: 0.065, y: 1.185}
-      - {x: -0.015, y: 1.115}
-      - {x: -0.185, y: 1.245}
-      - {x: -0.265, y: 1.245}
-      - {x: -0.415, y: 1.175}
-      - {x: -0.775, y: 0.965}
-      - {x: -0.895, y: 0.835}
-      - {x: -0.945, y: 0.705}
-      - {x: -1.0849999, y: 0.615}
-      - {x: -1.265, y: 0.435}
-      - {x: -1.265, y: 0.275}
-      - {x: -1.255, y: 0.13499999}
-      - {x: -1.235, y: -0.085}
-      - {x: -1.125, y: -0.585}
-      - {x: -1.095, y: -0.66499996}
-      - {x: -1.035, y: -0.755}
-      - {x: -0.885, y: -0.875}
-      - {x: -0.685, y: -0.995}
-      - {x: -0.505, y: -0.98499995}
-      - {x: -0.475, y: -1.115}
-      - {x: -0.39499998, y: -1.185}
-      - {x: -0.185, y: -1.175}
-      - {x: 0.085, y: -1.135}
-      - {x: 0.145, y: -1.2049999}
-      - {x: 0.285, y: -1.245}
-      - {x: 0.33499998, y: -1.255}
-      - {x: 0.415, y: -1.255}
-      - {x: 0.465, y: -1.235}
-      - {x: 0.715, y: -1.025}
-      - {x: 0.815, y: -1.005}
---- !u!212 &1202136267
-SpriteRenderer:
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1196583941
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202136264}
+  m_GameObject: {fileID: 1196583936}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2307933f7cbea4c4ebc28fe198a0fa15, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.51, y: 3.65}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1196583940}
 --- !u!1 &1217884087
 GameObject:
   m_ObjectHideFlags: 0
@@ -8634,7 +8641,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 72
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1217884089
 PolygonCollider2D:
@@ -8954,163 +8961,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1318827643
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1318827644}
-  - component: {fileID: 1318827646}
-  - component: {fileID: 1318827645}
-  m_Layer: 0
-  m_Name: Asteroid_1_brown (12)
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1318827644
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318827643}
-  m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 12.1, y: 9, z: 0.7276154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1606096388}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
---- !u!60 &1318827645
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318827643}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.51, y: 3.65}
-    newSize: {x: 3.51, y: 3.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.945, y: -0.945}
-      - {x: 1.015, y: -0.85499996}
-      - {x: 1.0849999, y: -0.72499996}
-      - {x: 1.145, y: -0.53499997}
-      - {x: 1.145, y: -0.39499998}
-      - {x: 1.185, y: -0.325}
-      - {x: 1.2149999, y: -0.265}
-      - {x: 1.245, y: -0.074999996}
-      - {x: 1.245, y: 0.015}
-      - {x: 1.185, y: 0.065}
-      - {x: 1.155, y: 0.095}
-      - {x: 1.155, y: 0.235}
-      - {x: 1.055, y: 0.525}
-      - {x: 0.97499996, y: 0.72499996}
-      - {x: 0.865, y: 0.835}
-      - {x: 0.775, y: 0.885}
-      - {x: 0.60499996, y: 0.935}
-      - {x: 0.405, y: 1.025}
-      - {x: 0.175, y: 1.165}
-      - {x: 0.065, y: 1.185}
-      - {x: -0.015, y: 1.115}
-      - {x: -0.185, y: 1.245}
-      - {x: -0.265, y: 1.245}
-      - {x: -0.415, y: 1.175}
-      - {x: -0.775, y: 0.965}
-      - {x: -0.895, y: 0.835}
-      - {x: -0.945, y: 0.705}
-      - {x: -1.0849999, y: 0.615}
-      - {x: -1.265, y: 0.435}
-      - {x: -1.265, y: 0.275}
-      - {x: -1.255, y: 0.13499999}
-      - {x: -1.235, y: -0.085}
-      - {x: -1.125, y: -0.585}
-      - {x: -1.095, y: -0.66499996}
-      - {x: -1.035, y: -0.755}
-      - {x: -0.885, y: -0.875}
-      - {x: -0.685, y: -0.995}
-      - {x: -0.505, y: -0.98499995}
-      - {x: -0.475, y: -1.115}
-      - {x: -0.39499998, y: -1.185}
-      - {x: -0.185, y: -1.175}
-      - {x: 0.085, y: -1.135}
-      - {x: 0.145, y: -1.2049999}
-      - {x: 0.285, y: -1.245}
-      - {x: 0.33499998, y: -1.255}
-      - {x: 0.415, y: -1.255}
-      - {x: 0.465, y: -1.235}
-      - {x: 0.715, y: -1.025}
-      - {x: 0.815, y: -1.005}
---- !u!212 &1318827646
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318827643}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2307933f7cbea4c4ebc28fe198a0fa15, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.51, y: 3.65}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1331788140
 GameObject:
   m_ObjectHideFlags: 0
@@ -9142,7 +8992,7 @@ Transform:
   m_LocalScale: {x: 2.1778653, y: 1.8050708, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 69
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1331788142
 CircleCollider2D:
@@ -9380,7 +9230,7 @@ Transform:
   m_LocalScale: {x: 2.1778653, y: 1.8050708, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 64
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1356128161
 CircleCollider2D:
@@ -9598,6 +9448,8 @@ GameObject:
   - component: {fileID: 1396565164}
   - component: {fileID: 1396565166}
   - component: {fileID: 1396565165}
+  - component: {fileID: 1396565167}
+  - component: {fileID: 1396565168}
   m_Layer: 0
   m_Name: Asteroid_1_brown (7)
   m_TagString: Obstacle
@@ -9617,7 +9469,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1396565165
 PolygonCollider2D:
@@ -9744,6 +9596,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1396565167
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396565163}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1396565168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396565163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1396565167}
 --- !u!1 &1441489030
 GameObject:
   m_ObjectHideFlags: 0
@@ -9775,7 +9659,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 63
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1441489032
 CircleCollider2D:
@@ -9874,6 +9758,8 @@ GameObject:
   - component: {fileID: 1459470817}
   - component: {fileID: 1459470819}
   - component: {fileID: 1459470818}
+  - component: {fileID: 1459470820}
+  - component: {fileID: 1459470821}
   m_Layer: 0
   m_Name: Asteroid_1_brown (8)
   m_TagString: Obstacle
@@ -9893,7 +9779,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1459470818
 PolygonCollider2D:
@@ -10020,6 +9906,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1459470820
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459470816}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1459470821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459470816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1459470820}
 --- !u!1 &1494597369
 GameObject:
   m_ObjectHideFlags: 0
@@ -10050,7 +9968,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 73
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1494597371
 PolygonCollider2D:
@@ -10499,6 +10417,8 @@ GameObject:
   - component: {fileID: 1553584546}
   - component: {fileID: 1553584548}
   - component: {fileID: 1553584547}
+  - component: {fileID: 1553584549}
+  - component: {fileID: 1553584550}
   m_Layer: 0
   m_Name: Asteroid_1_brown (16)
   m_TagString: Obstacle
@@ -10518,7 +10438,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 30
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1553584547
 PolygonCollider2D:
@@ -10645,6 +10565,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1553584549
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553584545}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1553584550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553584545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1553584549}
 --- !u!1 &1554077265
 GameObject:
   m_ObjectHideFlags: 0
@@ -10675,7 +10627,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 78
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1554077267
 PolygonCollider2D:
@@ -10813,6 +10765,8 @@ GameObject:
   - component: {fileID: 1563387052}
   - component: {fileID: 1563387054}
   - component: {fileID: 1563387053}
+  - component: {fileID: 1563387055}
+  - component: {fileID: 1563387056}
   m_Layer: 0
   m_Name: Asteroid_1_brown (36)
   m_TagString: Obstacle
@@ -10832,7 +10786,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 49
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1563387053
 PolygonCollider2D:
@@ -10959,6 +10913,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1563387055
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563387051}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1563387056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563387051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1563387055}
 --- !u!1 &1565224143
 GameObject:
   m_ObjectHideFlags: 0
@@ -10970,6 +10956,8 @@ GameObject:
   - component: {fileID: 1565224144}
   - component: {fileID: 1565224146}
   - component: {fileID: 1565224145}
+  - component: {fileID: 1565224147}
+  - component: {fileID: 1565224148}
   m_Layer: 0
   m_Name: Asteroid_1_brown (32)
   m_TagString: Obstacle
@@ -10989,7 +10977,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 46
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1565224145
 PolygonCollider2D:
@@ -11116,6 +11104,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1565224147
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565224143}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1565224148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565224143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1565224147}
 --- !u!1 &1586596353
 GameObject:
   m_ObjectHideFlags: 0
@@ -11127,6 +11147,8 @@ GameObject:
   - component: {fileID: 1586596354}
   - component: {fileID: 1586596356}
   - component: {fileID: 1586596355}
+  - component: {fileID: 1586596357}
+  - component: {fileID: 1586596358}
   m_Layer: 0
   m_Name: Asteroid_1_brown (24)
   m_TagString: Obstacle
@@ -11146,7 +11168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 38
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1586596355
 PolygonCollider2D:
@@ -11273,6 +11295,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1586596357
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586596353}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1586596358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586596353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1586596357}
 --- !u!1 &1606096386
 GameObject:
   m_ObjectHideFlags: 0
@@ -11331,19 +11385,14 @@ Transform:
   - {fileID: 1058285041}
   - {fileID: 2088101511}
   - {fileID: 960522325}
-  - {fileID: 1607483669}
   - {fileID: 932127084}
   - {fileID: 787031234}
   - {fileID: 1196583937}
   - {fileID: 963369396}
   - {fileID: 1396565164}
   - {fileID: 1459470817}
-  - {fileID: 198906177}
   - {fileID: 1948011011}
-  - {fileID: 1202136265}
-  - {fileID: 1318827644}
   - {fileID: 1784051052}
-  - {fileID: 372875216}
   - {fileID: 277802651}
   - {fileID: 1553584546}
   - {fileID: 608831196}
@@ -11351,7 +11400,6 @@ Transform:
   - {fileID: 1936455737}
   - {fileID: 516357076}
   - {fileID: 36735590}
-  - {fileID: 57497798}
   - {fileID: 2012313572}
   - {fileID: 1586596354}
   - {fileID: 312941577}
@@ -11366,7 +11414,6 @@ Transform:
   - {fileID: 350852282}
   - {fileID: 1563387052}
   - {fileID: 1753080098}
-  - {fileID: 633305359}
   - {fileID: 954260487}
   - {fileID: 19271269}
   - {fileID: 876202637}
@@ -11394,166 +11441,10 @@ Transform:
   - {fileID: 815421926}
   - {fileID: 2034858927}
   - {fileID: 1554077266}
+  - {fileID: 194957182}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1607483668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1607483669}
-  - component: {fileID: 1607483671}
-  - component: {fileID: 1607483670}
-  m_Layer: 0
-  m_Name: Asteroid_1_brown (2)
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1607483669
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607483668}
-  m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 15.75, y: -17.82, z: 0.7276154}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1606096388}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
---- !u!60 &1607483670
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607483668}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.51, y: 3.65}
-    newSize: {x: 3.51, y: 3.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.945, y: -0.945}
-      - {x: 1.015, y: -0.85499996}
-      - {x: 1.0849999, y: -0.72499996}
-      - {x: 1.145, y: -0.53499997}
-      - {x: 1.145, y: -0.39499998}
-      - {x: 1.185, y: -0.325}
-      - {x: 1.2149999, y: -0.265}
-      - {x: 1.245, y: -0.074999996}
-      - {x: 1.245, y: 0.015}
-      - {x: 1.185, y: 0.065}
-      - {x: 1.155, y: 0.095}
-      - {x: 1.155, y: 0.235}
-      - {x: 1.055, y: 0.525}
-      - {x: 0.97499996, y: 0.72499996}
-      - {x: 0.865, y: 0.835}
-      - {x: 0.775, y: 0.885}
-      - {x: 0.60499996, y: 0.935}
-      - {x: 0.405, y: 1.025}
-      - {x: 0.175, y: 1.165}
-      - {x: 0.065, y: 1.185}
-      - {x: -0.015, y: 1.115}
-      - {x: -0.185, y: 1.245}
-      - {x: -0.265, y: 1.245}
-      - {x: -0.415, y: 1.175}
-      - {x: -0.775, y: 0.965}
-      - {x: -0.895, y: 0.835}
-      - {x: -0.945, y: 0.705}
-      - {x: -1.0849999, y: 0.615}
-      - {x: -1.265, y: 0.435}
-      - {x: -1.265, y: 0.275}
-      - {x: -1.255, y: 0.13499999}
-      - {x: -1.235, y: -0.085}
-      - {x: -1.125, y: -0.585}
-      - {x: -1.095, y: -0.66499996}
-      - {x: -1.035, y: -0.755}
-      - {x: -0.885, y: -0.875}
-      - {x: -0.685, y: -0.995}
-      - {x: -0.505, y: -0.98499995}
-      - {x: -0.475, y: -1.115}
-      - {x: -0.39499998, y: -1.185}
-      - {x: -0.185, y: -1.175}
-      - {x: 0.085, y: -1.135}
-      - {x: 0.145, y: -1.2049999}
-      - {x: 0.285, y: -1.245}
-      - {x: 0.33499998, y: -1.255}
-      - {x: 0.415, y: -1.255}
-      - {x: 0.465, y: -1.235}
-      - {x: 0.715, y: -1.025}
-      - {x: 0.815, y: -1.005}
---- !u!212 &1607483671
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607483668}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2307933f7cbea4c4ebc28fe198a0fa15, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.51, y: 3.65}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1629976441
 GameObject:
   m_ObjectHideFlags: 0
@@ -11803,6 +11694,8 @@ GameObject:
   - component: {fileID: 1753080098}
   - component: {fileID: 1753080100}
   - component: {fileID: 1753080099}
+  - component: {fileID: 1753080101}
+  - component: {fileID: 1753080102}
   m_Layer: 0
   m_Name: Asteroid_1_brown (37)
   m_TagString: Obstacle
@@ -11822,7 +11715,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 50
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1753080099
 PolygonCollider2D:
@@ -11949,6 +11842,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1753080101
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753080097}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1753080102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753080097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1753080101}
 --- !u!1 &1784051051
 GameObject:
   m_ObjectHideFlags: 0
@@ -11960,6 +11885,8 @@ GameObject:
   - component: {fileID: 1784051052}
   - component: {fileID: 1784051054}
   - component: {fileID: 1784051053}
+  - component: {fileID: 1784051055}
+  - component: {fileID: 1784051056}
   m_Layer: 0
   m_Name: Asteroid_1_brown (13)
   m_TagString: Obstacle
@@ -11975,11 +11902,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784051051}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 28.6, y: -15.7, z: 0.7276154}
+  m_LocalPosition: {x: 28.34, y: -16.57, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 27
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1784051053
 PolygonCollider2D:
@@ -12106,6 +12033,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1784051055
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784051051}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1784051056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784051051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1784051055}
 --- !u!1 &1816667520
 GameObject:
   m_ObjectHideFlags: 0
@@ -12220,7 +12179,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 58
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1847450538
 CircleCollider2D:
@@ -12446,6 +12405,8 @@ GameObject:
   - component: {fileID: 1936455737}
   - component: {fileID: 1936455739}
   - component: {fileID: 1936455738}
+  - component: {fileID: 1936455740}
+  - component: {fileID: 1936455741}
   m_Layer: 0
   m_Name: Asteroid_1_brown (19)
   m_TagString: Obstacle
@@ -12465,7 +12426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 33
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1936455738
 PolygonCollider2D:
@@ -12592,6 +12553,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1936455740
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936455736}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1936455741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936455736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1936455740}
 --- !u!1 &1941886793
 GameObject:
   m_ObjectHideFlags: 0
@@ -12730,6 +12723,8 @@ GameObject:
   - component: {fileID: 1948011011}
   - component: {fileID: 1948011013}
   - component: {fileID: 1948011012}
+  - component: {fileID: 1948011014}
+  - component: {fileID: 1948011015}
   m_Layer: 0
   m_Name: Asteroid_1_brown (10)
   m_TagString: Obstacle
@@ -12745,11 +12740,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948011010}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 7.3, y: 14.5, z: 0.7276154}
+  m_LocalPosition: {x: 7.3, y: 14.8, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1948011012
 PolygonCollider2D:
@@ -12876,6 +12871,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1948011014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948011010}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1948011015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948011010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1948011014}
 --- !u!1 &1974921205
 GameObject:
   m_ObjectHideFlags: 0
@@ -12887,6 +12914,8 @@ GameObject:
   - component: {fileID: 1974921206}
   - component: {fileID: 1974921208}
   - component: {fileID: 1974921207}
+  - component: {fileID: 1974921209}
+  - component: {fileID: 1974921210}
   m_Layer: 0
   m_Name: Asteroid_1_brown (29)
   m_TagString: Obstacle
@@ -12906,7 +12935,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 43
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &1974921207
 PolygonCollider2D:
@@ -13033,6 +13062,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1974921209
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974921205}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1974921210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974921205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1974921209}
 --- !u!1 &1976937857
 GameObject:
   m_ObjectHideFlags: 0
@@ -13064,7 +13125,7 @@ Transform:
   m_LocalScale: {x: 2.1778653, y: 1.8050708, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 68
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1976937859
 CircleCollider2D:
@@ -13220,6 +13281,8 @@ GameObject:
   - component: {fileID: 2012313572}
   - component: {fileID: 2012313574}
   - component: {fileID: 2012313573}
+  - component: {fileID: 2012313575}
+  - component: {fileID: 2012313576}
   m_Layer: 0
   m_Name: Asteroid_1_brown (23)
   m_TagString: Obstacle
@@ -13235,11 +13298,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012313571}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 36, y: -16.5, z: 0.7276154}
+  m_LocalPosition: {x: 36.5, y: -15.9, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 37
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &2012313573
 PolygonCollider2D:
@@ -13366,6 +13429,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2012313575
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012313571}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2012313576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012313571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2012313575}
 --- !u!1 &2034858926
 GameObject:
   m_ObjectHideFlags: 0
@@ -13392,11 +13487,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034858926}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 60, y: 14.1, z: 0.7276154}
+  m_LocalPosition: {x: 42.6, y: 19, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 77
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &2034858928
 PolygonCollider2D:
@@ -13681,7 +13776,7 @@ Transform:
   m_LocalScale: {x: 1.7997, y: 1.5988, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 56
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &2066305501
 CircleCollider2D:
@@ -13902,7 +13997,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
-  m_RootOrder: 75
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.117}
 --- !u!60 &2083040796
 PolygonCollider2D:
@@ -14040,6 +14135,9 @@ GameObject:
   - component: {fileID: 2088101511}
   - component: {fileID: 2088101512}
   - component: {fileID: 2088101513}
+  - component: {fileID: 2088101514}
+  - component: {fileID: 2088101515}
+  - component: {fileID: 2088101516}
   m_Layer: 0
   m_Name: Asteroid_1_brown
   m_TagString: Obstacle
@@ -14055,7 +14153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088101510}
   m_LocalRotation: {x: -0, y: -0, z: -0.39167285, w: 0.92010456}
-  m_LocalPosition: {x: 5.5, y: -12.6, z: 0.7276154}
+  m_LocalPosition: {x: 3.2, y: -15.9, z: 0.7276154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1606096388}
@@ -14186,6 +14284,51 @@ PolygonCollider2D:
       - {x: 0.465, y: -1.235}
       - {x: 0.715, y: -1.025}
       - {x: 0.815, y: -1.005}
+--- !u!95 &2088101514
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088101510}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd2c351c29ef53c4f885b498b3c75a36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2088101515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088101510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2088101514}
+--- !u!114 &2088101516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088101510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686b19a5913dd0a4bbe2d6c99b129918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1 &2134275699
 GameObject:
   m_ObjectHideFlags: 0
