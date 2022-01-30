@@ -7,7 +7,7 @@ public class obstacleMovement : MonoBehaviour
     
     GameObject[] obstacles;
     [SerializeField]
-    float speed;
+    float speed, upperLowerThreshHold;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,7 @@ public class obstacleMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //takes everything from the array and moves it to the left
         foreach (GameObject o in obstacles)
         {
@@ -33,6 +34,17 @@ public class obstacleMovement : MonoBehaviour
                 {
                     o.SetActive(true);
                 }
+            }
+            //World wrap
+            //lower bound
+            if(o.transform.position.y < Camera.main.ScreenToWorldPoint(Vector3.zero).y-(o.transform.localScale.x*upperLowerThreshHold))
+            {
+                o.transform.position = new Vector3(o.transform.position.x, Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)).y + o.transform.localScale.x,o.transform.position.z);
+            }
+            //upper bound
+            if(o.transform.position.y > Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0)).y + (o.transform.localScale.x* upperLowerThreshHold))
+            {
+                o.transform.position = new Vector3(o.transform.position.x, Camera.main.ScreenToWorldPoint(Vector3.zero).y - o.transform.localScale.x,o.transform.position.z);
             }
         }
     }
