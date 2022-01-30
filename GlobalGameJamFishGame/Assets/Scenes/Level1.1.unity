@@ -215,6 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 96494459}
   - component: {fileID: 96494458}
+  - component: {fileID: 96494460}
   m_Layer: 0
   m_Name: Asteroid_3
   m_TagString: Untagged
@@ -287,6 +288,25 @@ Transform:
   m_Father: {fileID: 1350479047}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &96494460
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96494457}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cad0e40b3ce967f42b32f82a10798547, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &120410700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,6 +2487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  upperLowerThreshHold: 0
 --- !u!4 &1350479047
 Transform:
   m_ObjectHideFlags: 0
