@@ -48,4 +48,9 @@ public class obstacleMovement : MonoBehaviour
             }
         }
     }
+
+    public float getSpeed()
+    {
+        return speed;
+    }
 }
