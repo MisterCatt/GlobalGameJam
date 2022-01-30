@@ -27,13 +27,21 @@ public class obstacleMovement : MonoBehaviour
         foreach (GameObject o in obstacles)
         {
             o.transform.Translate(-Vector3.right * speed * Time.deltaTime);
-            if(o.transform.position.x < Camera.main.ScreenToWorldPoint(Vector3.zero).x)
-            {
-                o.transform.position = new Vector3(100,o.transform.position.y,o.transform.position.z);
-            }
+            //if(o.transform.position.x < Camera.main.ScreenToWorldPoint(Vector3.zero).x)
+            //{
+            //    if(!(o.tag == "RedStar" || o.tag == "BlueStar"))
+            //    o.transform.position = new Vector3(100,o.transform.position.y,o.transform.position.z);
+            //}
 
+            if(o.transform.position.x < -400)
+            {
+                if (o.tag == "Tip")
+                    o.SetActive(false);
+
+                    o.transform.position = new Vector3(100, o.transform.position.y, o.transform.position.z);
+            }
            
-           
+           //-450 x
 
             //World wrap
             //lower bound
