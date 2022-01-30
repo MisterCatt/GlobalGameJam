@@ -44,7 +44,7 @@ public class LevelManager : MonoBehaviour
         //if any of the 2 scores go below 0, you DIE
         if(redScore < 0 || blueScore < 0)
         {
-            Dead();
+           // Dead();
 
         }
 
