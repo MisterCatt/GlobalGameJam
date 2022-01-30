@@ -48,7 +48,7 @@ public class LevelManager : MonoBehaviour
         //if any of the 2 scores go below 0, you DIE
         if(redScore < -2 || blueScore < -2)
         {
-           // Dead();
+            Dead();
 
         }
 
@@ -107,6 +107,7 @@ public class LevelManager : MonoBehaviour
         om.enabled = false;
         Debug.Log("DEADDEADDEAD");
         SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
     //function that is called when 1 fish eats the other
