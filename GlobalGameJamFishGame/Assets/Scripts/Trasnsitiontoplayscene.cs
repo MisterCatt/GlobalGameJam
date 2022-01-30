@@ -19,7 +19,7 @@ public class Trasnsitiontoplayscene : MonoBehaviour
         }
         if (timeLeft < 0)
         {
-            SceneManager.LoadScene("Daniels test level1.1");
+            SceneManager.LoadScene("Daniels test level 1.1");
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
