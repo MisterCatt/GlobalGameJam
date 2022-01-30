@@ -26,10 +26,10 @@ public class Balance : MonoBehaviour
         image = obj.GetComponent<Image>();
        pos1 = Blue.transform.position;
        pos2 = Orange.transform.position;
-       pos1low= pos1 + new Vector3(0, -22, 0);
-        pos1high= pos1 + new Vector3(0, 22, 0);
-        pos2low = pos2 + new Vector3(0, -22, 0);
-        pos2high = pos2 + new Vector3(0, 22, 0);
+       pos1low= pos1 + new Vector3(0, -39, 0);
+        pos1high= pos1 + new Vector3(0, 39, 0);
+        pos2low = pos2 + new Vector3(0, -39, 0);
+        pos2high = pos2 + new Vector3(0, 39, 0);
     }
 
     
@@ -44,7 +44,7 @@ public class Balance : MonoBehaviour
             Orange.transform.position = pos2;
 
         }
-        else if (AC1.AmmountCollectedBlue > AC2.AmmountCollectedOrange)
+        else if (AC1.AmmountCollectedBlue < AC2.AmmountCollectedOrange)
         {
            
                 Blue.transform.position =pos1high;
@@ -56,7 +56,7 @@ public class Balance : MonoBehaviour
            
             
         }
-        else if (AC1.AmmountCollectedBlue < AC2.AmmountCollectedOrange)
+        else if (AC1.AmmountCollectedBlue > AC2.AmmountCollectedOrange)
         {
            
                 Orange.transform.position = pos2high;

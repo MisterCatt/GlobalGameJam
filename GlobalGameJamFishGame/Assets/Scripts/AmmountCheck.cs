@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AmmountCheck : MonoBehaviour
 {
-    public Sprite newSprite1, newSprite2, newSprite3, newSprite4, newSprite5;
+    public Sprite newSprite0,newSprite1, newSprite2, newSprite3, newSprite4, newSprite5;
     public Sprite newSprite6, newSprite7, newSprite8, newSprite9, newSprite10;
     public int AmmountCollectedBlue, AmmountCollectedOrange;
     GameObject obj1, obj2, lm;
@@ -30,8 +30,11 @@ public class AmmountCheck : MonoBehaviour
        AmmountCollectedBlue = levelManager.getBlueScore();
        AmmountCollectedOrange = levelManager.getRedScore();
 
-
-        if (AmmountCollectedBlue > 0 && AmmountCollectedBlue <= 2)
+        if (AmmountCollectedBlue == 0 )
+        {
+            image1.sprite = newSprite0;
+        }
+        else if (AmmountCollectedBlue > 0 && AmmountCollectedBlue <= 2)
         {
             image1.sprite = newSprite1;
         }
@@ -53,8 +56,11 @@ public class AmmountCheck : MonoBehaviour
         }
 
 
-
-        if (AmmountCollectedOrange > 0 && AmmountCollectedOrange <= 2)
+        if (AmmountCollectedOrange == 0)
+        {
+            image2.sprite = newSprite0;
+        }
+        else if (AmmountCollectedOrange > 0 && AmmountCollectedOrange <= 2)
         {
             image2.sprite = newSprite6;
         }
