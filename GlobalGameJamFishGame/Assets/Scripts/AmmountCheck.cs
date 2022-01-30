@@ -34,7 +34,7 @@ public class AmmountCheck : MonoBehaviour
         {
             image1.sprite = newSprite0;
         }
-        if (AmmountCollectedBlue > 0 && AmmountCollectedBlue <= 2)
+        else if (AmmountCollectedBlue > 0 && AmmountCollectedBlue <= 2)
         {
             image1.sprite = newSprite1;
         }
@@ -58,9 +58,9 @@ public class AmmountCheck : MonoBehaviour
 
         if (AmmountCollectedOrange == 0)
         {
-            image1.sprite = newSprite0;
+            image2.sprite = newSprite0;
         }
-        if (AmmountCollectedOrange > 0 && AmmountCollectedOrange <= 2)
+        else if (AmmountCollectedOrange > 0 && AmmountCollectedOrange <= 2)
         {
             image2.sprite = newSprite6;
         }
