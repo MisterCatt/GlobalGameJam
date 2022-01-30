@@ -17,6 +17,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] GameObject fish1;
     [SerializeField] GameObject fish2;
 
+    Scene currentScene;
+    string sceneName;
    
     void Start()
     {
@@ -36,6 +38,9 @@ public class LevelManager : MonoBehaviour
         redScore=0;
 
         Debug.Log("Red score: " + redScore + ", Blue score: " + blueScore);
+
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
 
     }
 
@@ -125,7 +130,18 @@ public class LevelManager : MonoBehaviour
         
         // dissable fish , reset speed apply a new sprite to anchor
 
-
+        if(sceneName == "Daniels test level 1.1")
+        {
+            SceneManager.LoadScene("Lvl 2", LoadSceneMode.Single);
+        }
+        else if(sceneName == "Lvl 2")
+        {
+            SceneManager.LoadScene("Lvl 3", LoadSceneMode.Single);
+        }
+        else if(sceneName == "Lvl 3")
+        {
+            SceneManager.LoadScene("WinScreen", LoadSceneMode.Single);
+        }
 
     }
    
