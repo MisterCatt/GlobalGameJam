@@ -31,6 +31,10 @@ public class obstacleMovement : MonoBehaviour
             {
                 o.transform.position = new Vector3(100,o.transform.position.y,o.transform.position.z);
             }
+
+           
+           
+
             //World wrap
             //lower bound
             if(o.transform.position.y < Camera.main.ScreenToWorldPoint(Vector3.zero).y-(o.transform.localScale.x*upperLowerThreshHold))
@@ -42,11 +46,17 @@ public class obstacleMovement : MonoBehaviour
             {
                 o.transform.position = new Vector3(o.transform.position.x, Camera.main.ScreenToWorldPoint(Vector3.zero).y - o.transform.localScale.x,o.transform.position.z);
             }
+
         }
+
+        
     }
 
     public float getSpeed()
     {
         return speed;
     }
+
 }
+
+

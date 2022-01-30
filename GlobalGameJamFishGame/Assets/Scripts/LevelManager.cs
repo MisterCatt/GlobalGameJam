@@ -44,19 +44,19 @@ public class LevelManager : MonoBehaviour
         //if any of the 2 scores go below 0, you DIE
         if(redScore < 0 || blueScore < 0)
         {
-            Dead();
+           // Dead();
 
         }
 
         //if the red score is 3 higher than the blue, play the fish eating animation
         if(redScore == blueScore+2)
         {
-            EatFish();
+           // EatFish();
         }
         //if the blue score is 3 higher than the red, play the fish eating aniimation
         if(blueScore == redScore + 2)
         {
-            EatFish();
+           // EatFish();
         }
         if(blueScore == 5 && redScore == 5)
         {
