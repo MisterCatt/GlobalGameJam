@@ -6,10 +6,7 @@ public class AsteroidAnimationControl : MonoBehaviour
 {
     public Animator anim;
 
-    public float offsetTime = 0.1f;
     private float timer = 0f;
-
-    bool temp;
 
     private void Start()
     {
@@ -18,9 +15,14 @@ public class AsteroidAnimationControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "RedFish")
+        if(collision.tag == "RedFish" || collision.tag == "BlueFish")
         {
+            if(transform.GetComponent<SpriteRenderer>().sprite.name == "Asteroid")
             anim.Play("asteroidanim1");
+            else if (transform.GetComponent<SpriteRenderer>().sprite.name == "Asteroid_2")
+            anim.Play("asteroidanim2");
+            else
+            anim.Play("asteroidanim3");
         }
     }
 }

@@ -12,11 +12,13 @@ public class FishCollision : MonoBehaviour
     public List<AudioSource> soundEffects = new List<AudioSource>();
     public List<AudioSource> listOfStarNotes = new List<AudioSource>();
     static int noteIndex = 0;
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         lm = levelManager.GetComponent<LevelManager>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,10 +36,9 @@ public class FishCollision : MonoBehaviour
         //Is called when an obstacle collides with the red fish
         if (collision.gameObject.tag == "Obstacle" && gameObject.tag == "RedFish")
         {
-            Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
             lm.removeRedScore();
             DownSize();
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
             soundEffects[0].Play(); //plays the commet collision sfx
 
         }
@@ -47,7 +48,7 @@ public class FishCollision : MonoBehaviour
             lm.addRedScore();
             UpSize();
             //PLAY A FANCY ROCK SMASH ANIMATION AND MAKE A FANCY ROCK SMASH SOUND
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
             listOfStarNotes[noteIndex].Play(); //plays the good star collision sfx
             noteIndex++;
         }
@@ -63,13 +64,13 @@ public class FishCollision : MonoBehaviour
             lm.removeBlueScore();
             DownSize();
             //PLAY A FANCY ROCK SMASH ANIMATION AND MAKE A FANCY ROCK SMASH SOUND
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
             soundEffects[0].Play(); //plays the commet collision sfx
         }
         //is called when the blue star collides with the blue fish
         if(collision.gameObject.tag == "BlueStar" && gameObject.tag == "BlueFish")
         {
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
             lm.addBlueScore();
             UpSize();
             listOfStarNotes[noteIndex].Play(); //plays the good star collision sfx
