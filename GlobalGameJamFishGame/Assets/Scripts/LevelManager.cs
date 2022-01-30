@@ -136,12 +136,9 @@ public class LevelManager : MonoBehaviour
         }
         else if(sceneName == "Lvl 2")
         {
-            SceneManager.LoadScene("Lvl 3", LoadSceneMode.Single);
-        }
-        else if(sceneName == "Lvl 3")
-        {
             SceneManager.LoadScene("WinScreen", LoadSceneMode.Single);
         }
+    
 
     }
    
