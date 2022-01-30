@@ -17,12 +17,14 @@ public class AsteroidAnimationControl : MonoBehaviour
     {
         if(collision.tag == "RedFish" || collision.tag == "BlueFish")
         {
-            if(transform.GetComponent<SpriteRenderer>().sprite.name == "Asteroid")
-            anim.Play("asteroidanim1");
+            if (transform.GetComponent<SpriteRenderer>().sprite.name == "Asteroid")
+                anim.Play("asteroidanim1");
             else if (transform.GetComponent<SpriteRenderer>().sprite.name == "Asteroid_2")
-            anim.Play("asteroidanim2");
+                anim.Play("asteroidanim2");
+            else if (transform.GetComponent<SpriteRenderer>().sprite.name == "Asteroid_1_brown")
+                anim.Play("asteroidanim2_1");
             else
-            anim.Play("asteroidanim3");
+                anim.Play("asteroidanim3");
         }
     }
 }

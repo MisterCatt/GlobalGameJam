@@ -33,7 +33,7 @@ public class obstacleMovement : MonoBehaviour
             //    o.transform.position = new Vector3(100,o.transform.position.y,o.transform.position.z);
             //}
 
-            if(o.transform.position.x < -400)
+            if(o.transform.position.x < GameObject.Find("Loop_here").transform.position.x)
             {
                 if (o.tag == "Tip")
                     o.SetActive(false);

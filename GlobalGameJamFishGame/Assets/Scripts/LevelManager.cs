@@ -48,20 +48,20 @@ public class LevelManager : MonoBehaviour
         //if any of the 2 scores go below 0, you DIE
         if(redScore < -2 || blueScore < -2)
         {
-           // Dead();
+            Dead();
 
         }
 
         //if the red score is 3 higher than the blue, play the fish eating animation
-        if(redScore == blueScore+2)
-        {
-           // EatFish();
-        }
-        //if the blue score is 3 higher than the red, play the fish eating aniimation
-        if(blueScore == redScore + 2)
-        {
-           // EatFish();
-        }
+        //if(redScore == blueScore+2)
+        //{
+        //    EatFish();
+        //}
+        ////if the blue score is 3 higher than the red, play the fish eating aniimation
+        //if(blueScore == redScore + 2)
+        //{
+        //    EatFish();
+        //}
         if(blueScore == 5 && redScore == 5)
         {
             Win();
@@ -107,6 +107,7 @@ public class LevelManager : MonoBehaviour
         om.enabled = false;
         Debug.Log("DEADDEADDEAD");
         SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
     //function that is called when 1 fish eats the other
