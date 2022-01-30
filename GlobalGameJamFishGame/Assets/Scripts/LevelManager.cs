@@ -14,6 +14,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     GameObject obstacles;
     obstacleMovement om;
+    [SerializeField] GameObject fish1;
+    [SerializeField] GameObject fish2;
+
+   
     void Start()
     {
         //CODE BELOW IS TEMPORARLY OUT COMMENTED WIP
@@ -117,7 +121,11 @@ public class LevelManager : MonoBehaviour
         om.enabled = false;
         Debug.Log("Fish fusion activate!");
         // play white fish animation
+        
         // dissable fish , reset speed apply a new sprite to anchor
+
+
+
     }
    
 }
