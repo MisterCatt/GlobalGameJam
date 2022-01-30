@@ -8,7 +8,7 @@ public class Trasnsitiontoplayscene : MonoBehaviour
     public AudioSource startButtonMusic;
     public AudioSource menuMusic;
     float timeLeft = 0;
-    bool pressed;
+    bool pressed = false;
 
     void Update()
     {
@@ -24,10 +24,13 @@ public class Trasnsitiontoplayscene : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            timeLeft = 4.18f;
-            DontDestroyOnLoad(startButtonMusic);
-            startButtonMusic.Play();
-            pressed = true;
+            if (!pressed)
+            {
+                timeLeft = 4.18f;
+                DontDestroyOnLoad(startButtonMusic);
+                startButtonMusic.Play();
+                pressed = true;
+            }
         }
     }
 }
