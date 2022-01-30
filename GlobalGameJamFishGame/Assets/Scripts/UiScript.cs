@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UiScript : MonoBehaviour
 {
     [SerializeField]
-    GameObject levelManager, text;
+    GameObject levelManager;
     LevelManager lm;
 
     // Start is called before the first frame update
@@ -14,12 +14,10 @@ public class UiScript : MonoBehaviour
     void Start()
     {
         lm = levelManager.GetComponent<LevelManager>();
-        text.GetComponent<Text>().text = "Red score: " + lm.getRedScore() + "\nBlue score: " + lm.getBlueScore();
     }
 
     // Update is called once per frame
     void Update()
     {
-        text.GetComponent<Text>().text = "Red score: " + lm.getRedScore() + "\nBlue score: " + lm.getBlueScore();
     }
 }
