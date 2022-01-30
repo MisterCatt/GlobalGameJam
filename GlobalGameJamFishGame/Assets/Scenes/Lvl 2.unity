@@ -4627,18 +4627,18 @@ MonoBehaviour:
   levelManager: {fileID: 1550883919}
   sizeChange: 1.1
   soundEffects:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2066058236}
+  - {fileID: 189261277}
   - {fileID: 0}
   listOfStarNotes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1083592432}
+  - {fileID: 1001836231}
+  - {fileID: 881612785}
+  - {fileID: 1941886795}
+  - {fileID: 305401326}
+  - {fileID: 747618526}
+  - {fileID: 1918692467}
+  - {fileID: 1125163085}
 --- !u!212 &647476476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5095,14 +5095,14 @@ MonoBehaviour:
   - {fileID: 189261277}
   - {fileID: 0}
   listOfStarNotes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1083592432}
+  - {fileID: 1001836231}
+  - {fileID: 881612785}
+  - {fileID: 1941886795}
+  - {fileID: 305401326}
+  - {fileID: 747618526}
+  - {fileID: 1918692467}
+  - {fileID: 1125163085}
 --- !u!212 &756404948
 SpriteRenderer:
   m_ObjectHideFlags: 0
